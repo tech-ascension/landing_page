@@ -1,0 +1,7 @@
+User-Agent: *
+Disallow: 
+Disallow: /ghost
+Disallow: /p
+Disallow: /search
+
+Sitemap: https://ascnensioncloudsolutions.com/sitemap.xml
