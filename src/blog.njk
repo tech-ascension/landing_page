@@ -1,78 +1,129 @@
 ---
 title: Blog
-layout: 'base.njk'
+layout: 'blog-template.njk'
 ---
 
-<main>
-    <div class="section container">
-        <h1 class="section-title">Recent articles</h1>
-        <ul role="list" class="articles__list flow">
-            <li>
-                <article class="snippet">
-                    <img src="/assets/images/mountains.png" alt="a man on his computer" class="snippet__image">
-                    <h3 class="snippet__title">
-                        <a href="/blog/another-article/">Another article!!</a>
-                    </h3>
-                    <p class="snippet__meta">by <span>Kevin Powell</span> on <span>Jun 15, 2021</span></p>
-                    <p class="snippet__body">This is a new article that I&#39;ll be posting</p>
-                    <a href="/blog/another-article/" class="btn btn--primary">Continue Reading</a>
-                </article>
-            </li>
-            <li>
-                <article class="snippet">
-                    <img src="/assets/images/setting.jpg" alt="This is a test" class="snippet__image">
-                    <h3 class="snippet__title">
-                        <a href="/blog/my-fifth-article/">My Fifth Article</a>
-                    </h3>
-                    <p class="snippet__meta">by <span>Kevin Powell</span> on <span>Jun 14, 2021</span></p>
-                    <p class="snippet__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis accusantium sit illo neque rem omnis quaerat, nam similique vitae delectus ad magni vel quo maxime, magnam placeat. Reprehenderit, distinctio aliquam?</p>
-                    <a href="/blog/my-fifth-article/" class="btn btn--primary">Continue Reading</a>
-                </article>
-            </li>
-            <li>
-                <article class="snippet">
-                    <img src="/assets/images/setting (2).jpg" alt="This is a test" class="snippet__image">
-                    <h3 class="snippet__title">
-                        <a href="/blog/my-fourth-article/">My Fourth Article</a>
-                    </h3>
-                    <p class="snippet__meta">by <span>Kevin Powell</span> on <span>May 31, 2021</span></p>
-                    <p class="snippet__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis accusantium sit illo neque rem omnis quaerat, nam similique vitae delectus ad magni vel quo maxime, magnam placeat. Reprehenderit, distinctio aliquam?</p>
-                    <a href="/blog/my-fourth-article/" class="btn btn--primary">Continue Reading</a>
-                </article>
-            </li>
-            <li>
-                <article class="snippet">
-                    <img src="/assets/images/setting (5).jpg" alt="This is a test" class="snippet__image">
-                    <h3 class="snippet__title">
-                        <a href="/blog/my-third-article/">My Third Article</a>
-                    </h3>
-                    <p class="snippet__meta">by <span>Kevin Powell</span> on <span>May 27, 2021</span></p>
-                    <p class="snippet__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis accusantium sit illo neque rem omnis quaerat, nam similique vitae delectus ad magni vel quo maxime, magnam placeat. Reprehenderit, distinctio aliquam?</p>
-                    <a href="/blog/my-third-article/" class="btn btn--primary">Continue Reading</a>
-                </article>
-            </li>
-            <li>
-                <article class="snippet">
-                    <img src="/assets/images/setting (6).jpg" alt="This is a test" class="snippet__image">
-                    <h3 class="snippet__title">
-                        <a href="/blog/my-second-article/">My Second Article</a>
-                    </h3>
-                    <p class="snippet__meta">by <span>Kevin Powell</span> on <span>May 14, 2021</span></p>
-                    <p class="snippet__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis accusantium sit illo neque rem omnis quaerat, nam similique vitae delectus ad magni vel quo maxime, magnam placeat. Reprehenderit, distinctio aliquam?</p>
-                    <a href="/blog/my-second-article/" class="btn btn--primary">Continue Reading</a>
-                </article>
-            </li>
-            <li>
-                <article class="snippet">
-                    <img src="/assets/images/setting (7).jpg" alt="This is a test" class="snippet__image">
-                    <h3 class="snippet__title">
-                        <a href="/blog/my-first-article/">My First Article</a>
-                    </h3>
-                    <p class="snippet__meta">by <span>Kevin Powell</span> on <span>Apr 30, 2021</span></p>
-                    <p class="snippet__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis accusantium sit illo neque rem omnis quaerat, nam similique vitae delectus ad magni vel quo maxime, magnam placeat. Reprehenderit, distinctio aliquam?</p>
-                    <a href="/blog/my-first-article/" class="btn btn--primary">Continue Reading</a>
-                </article>
-            </li>
-        </ul>
+<div class="spacer"></div>
+
+<img class="black-vector-1" src="/assets/images/black-vector-1.svg" alt="logo"/>
+
+<div class="container">
+    <div class="content">
+        <div class="section services-section">
+            <div class="row">
+                <h2 id="services" class="services">Recent Articles</h2>
+            </div>
+            <div class="row">
+                <div class="col-4 service">
+                    <i class="fas fa-sitemap fa-5x"></i>
+                    <h3>Blog 1</h3>
+                    <div class="service-body">
+                        <p>
+              Not sure what technologies will be the right fit for your business? Our team has worked with various
+              successful e-business strategies and assisted getting them to market from the ground up. We know what it
+              takes to integrate technology seamlessly with your platform. From disaster mangement strategies to
+              software support & maintenance, we've been through it all.
+            </p>
+                    </div>
+                </div>
+                <div class="col-4 service">
+                    <i class="fas fa-pen-fancy fa-5x"></i>
+                    <h3>Blog 2</h3>
+                    <div class="service-body">
+                        <p>
+              No design yet? Not sure what tools you'll need? No problem, we consult experts in the field to bring your
+              ideas to life. We have a project package suitable for a variety of budgets and can guide you every step of
+              the way.
+            </p>
+                    </div>
+                </div>
+                <div class="col-4 service">
+                    <i class="fas fa-chart-line fa-5x"></i>
+                    <h3>Blog 3</h3>
+                    <div class="service-body">
+                        <p>
+              Already have a design in place and just need to find a service to get you to market? Our developers are
+              dedicated to ensuring that you leave with a stable, responsive application which will scale effectively to
+              your use case. Whether it is an application that needs to be built from the ground up, or something you
+              already have that requires some finishing touches, no job is too big or too small. Our team is standing by
+              ready to help you ascend to a new level of success.
+            </p>
+                    </div>
+                </div>
+            </div>
+            <div class="get_started_section">
+                <div class="get_started_inner">
+                    <p>
+            Book your <strong>free 1-hour consultation </strong> and get one step closer to making your vision a
+            reality!
+          </p>
+                    <button class="btn-primary no-smoothState open-contact" type="submit">Get Started</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="section about-section">
+            <div class="about">
+                <h2 id="about-us">Featured Articles</h2>
+                <div class="row">
+                    <div class="service-body">
+                        <p>
+              Ascension Cloud Solutions is a tech consulting agency based in Wollongong. We work with experts in a wide
+              range of technologies and practices in order to provide businesses a holistic approach that ensures a
+              stable design, execution, and integration when implementing software for your business. From e-commerce
+              websites to enterprise level social networks, we are the one-stop-shop to ensure you get the outcome you
+              desire.
+            </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4 service">
+                    <i class="fas fa-globe fa-5x"></i>
+                    <h3>Blog 4</h3>
+                    <div class="service-body">
+                        <p>
+              Ready to take the next step in your online journey and dramatically improve the way you do business? Let
+              our team help you put together a stunning website and fast track your success with all the tools you need
+              to conduct a professional marketing platform for your business.
+            </p>
+                    </div>
+                </div>
+                <div class="col-4 service">
+                    <i class="fas fa-mobile-alt fa-5x"></i>
+                    <h3>Blog 5</h3>
+                    <div class="service-body">
+                        <p>
+              Do you need to create something unique and cater more towards the specific needs within your industry? Our
+              team can assist with every stage of custom development required for your web or mobile app idea! Our end
+              to end design, develop, and test practice will deliver the means for you to blow your competitors out of
+              the water.
+            </p>
+                    </div>
+                </div>
+                <div class="col-4 service">
+                    <i class="fas fa-tools fa-5x"></i>
+                    <h3>Blog 6</h3>
+                    <div class="service-body">
+                        <p>
+              Struggling with an application that is already built and not sure where to turn? Are you having to manage
+              legacy code leftover from a team of developers who are no longer able to support the project? We are happy
+              to tackle any problem in order to get you a solution that delivers you a result that best accomodates your
+              every need. We employ experts in integrations and migrations who bridge the gap between legacy and
+              bleeding edge tech. Let's get you back on track!
+            </p>
+                    </div>
+                </div>
+            </div>
+            <div class="get_started_section">
+                <div class="get_started_inner">
+                    <p>
+            Book your <strong>free 1-hour consultation </strong> and get one step closer to making your vision a
+            reality!
+          </p>
+                    <button class="btn-primary no-smoothState open-contact" type="submit">Get Started</button>
+                </div>
+            </div>
+        </div>
     </div>
-</main>
+</div>
