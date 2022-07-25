@@ -1,0 +1,21 @@
+backend:
+  name: bitbucket
+  repo: owner-name/repo-name
+
+media_folder: "../assets/images"
+public_folder: "../assets/images"
+collections:
+  - name: "blogs"
+    label: "Blogs"
+    folder: "..src/blogs"
+    create: true
+    slug: "{{year}}-{{month}}-{{date}}-{{slug}}"
+    feilds: 
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "description", name: "description", widget: "string" }
+      - { label: "Author", name: "author", widget: "string" }
+      - { label: "date", name: "date", widget: "dateTime" }
+      - { label: "Tags", name: "image", widget: "list", default }
+      - { label: "Feature Image", name: "image", widget: "image" }
+      - { label: "Image caption", name: "imageAlt", widget: "string" }
+      - { label: "body", name: "body", widget: "markdown" }
