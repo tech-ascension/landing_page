@@ -7,6 +7,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/normalize.css");
   eleventyConfig.addPassthroughCopy("./src/blog.css");
   eleventyConfig.addPassthroughCopy("./src/application.css");
+  eleventyConfig.addPassthroughCopy("./src/admin");
 
   // DateTime Configuration
 
