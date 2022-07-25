@@ -1356,3 +1356,30 @@ button:hover {
     }
   }
 }
+
+/* blog css */
+div.card{
+  width: 80%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+}
+
+.snippet_image{
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.snippet_meta{
+  font-size: 5rem;
+  color: #1b1719;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: capitalize;
+}
+
+.snippet_body{
+  font-size: 1.5rem;
+  color: #1b1719;
+  font-family: Arial, Helvetica, sans-serif;
+}
