@@ -89,10 +89,9 @@
          <div class="columns">
             <div class="column is-8 is-offset-2">
               <article class="content mt-5">
-                <h1 class="title">{{ title }}</h1>
-                <p class="subtitle is-6">
-                  Published on: <time datetime="{{ page.date }}">{{ page.date }}</time>
-                </p>
+                <div class="blog-heading">
+                  <h1 class="title">{{ title }}</h1>
+                </div>
                  {{ content | safe }}
               </article>
             </div>
@@ -105,6 +104,7 @@
     </main>
     {% include 'footer.njk' %}
 
+    
     <script>
   if (window.netlifyIdentity) {
     window.netlifyIdentity.on("init", user => {

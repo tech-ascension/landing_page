@@ -169,6 +169,11 @@ button:hover {
   border-radius: 10px;
 }
 
+.container{
+  width: 80%;
+  margin: 0 auto;
+}
+
 .navbar {
   display: flex;
   align-items: center;
@@ -262,6 +267,102 @@ button:hover {
   margin: 0px;
   padding-right: 30px;
 }
+
+/* blog css */
+
+.content{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   padding: 40px;
+   border-bottom: 1px solid;
+}
+
+.blog-heading{
+  display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+.title{
+  font-size: 2.4rem;
+  color: lightblue;
+  font-weight: 600;
+}
+
+.blog-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0px;
+  flex-wrap: wrap;
+}
+
+.blog-box{
+  width: 350px;
+  background-color: #0d5c63;
+  border: 1px solid #1b1719;
+  margin: 20px;
+}
+
+.blog-img{
+  width: 100%;
+  height: auto;
+}
+
+.blog-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.blog-text{
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-text span{
+  color: #afe4f6;
+  font-size: 0.9rem;
+}
+
+.blog-text .blog-title{
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #292929;
+
+}
+
+.blog-text .blog-title:hover{
+  color: #1b1719;
+  transition: all ease 0.3s;
+}
+
+.blog-text .snippet_body{
+  color: #1c1c1c;
+  font-size: 00.9rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 20px 0px;
+}
+
+.blog-text a{
+  color: #1b1719;
+}
+
+.blog-text a:hover{
+  color: #1c1c1c;
+  transition: all ease 0.3s;
+}
+
+/* end */
 
 /* Containers & Wrappers */
 

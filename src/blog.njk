@@ -18,16 +18,7 @@ layout: 'blog-template.njk'
                  {%-for post in collections.post | reverse -%} {# it is to show the the most recent blog #}
 
                  {% include 'articles-snippet.njk'%}
-                {# <div class="col-4 service">
-                    <i class="fas fa-sitemap fa-5x"></i>
-                    <image src="{{post.data.image}}" alt="{{post.data.imageAlt}}" class="snippet_image"/>
-                    <h3><a href="{{post.url}}">{{ post.data.title}}</a></h3>
-                    <div class="card">
-                        <p class="snippet_meta">by <span>{{post.data.author}}</span> on <span>{{post.date | postDate}}</span></p>
-                        <p class="snippet_body">{{post.data.description}}</p>
-                    </div>
-                        <a href="{{post.url}}" class="btn btn-primary">Continue Reading</a>
-                </div>  #}
+                
                 {%-endfor-%}
             </div>
                     {# will have to delete it later #}
@@ -40,21 +31,12 @@ layout: 'blog-template.njk'
                 <div class="row">
                 <h2 id="services" class="services">featured Articles</h2>
             </div>
-                {# <h2 id="about-us">Featured Articles</h2> #}
+                
                 <div class="row">
                  {%-for post in collections.post | reverse -%} {# it is to show the the most recent blog #}
 
-
-                {# <div class="col-4 service">
-                    <i class="fas fa-sitemap fa-5x"></i>
-                    <h3><a href="{{post.url}}">{{ post.data.title}}</a></h3>
-                    <div class="card">
-                        <image src="{{post.data.image}}" alt="{{post.data.imageAlt}}" class="snippet_image"/>
-                        <p class="snippet_meta">by <span>{{post.data.author}}</span></p>
-                        <p class="snippet_body">{{post.data.description}}</p>
-                    </div>
-                    <a href="{{post.url}}" class="btn btn-primary">Continue Reading</a>
-                </div>  #}
+                 {% include 'articles-snippet.njk'%}
+                
                 {%-endfor-%}
             
             
