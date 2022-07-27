@@ -270,6 +270,28 @@ button:hover {
 
 /* blog css */
 
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+}
+
+li{
+  list-style: none;
+}
+
+body{
+  margin:0px;
+  padding: 0px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
 .content{
    display: flex;
    justify-content: center;
@@ -284,6 +306,19 @@ button:hover {
    justify-content: center;
    align-items: center;
    flex-direction: column;
+}
+
+.main-heading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main-heading h2{
+  color: #1a657e;
+  font-size: 2.4rem;
+  font-weight: 600;
 }
 
 .title{
@@ -304,7 +339,7 @@ button:hover {
   width: 350px;
   background-color: #0d5c63;
   border: 1px solid #1b1719;
-  margin: 20px;
+  margin: 10px;
 }
 
 .blog-img{
@@ -328,39 +363,70 @@ button:hover {
 .blog-text span{
   color: #afe4f6;
   font-size: 0.9rem;
+  font-family: 'poppins', sans-serif;
 }
 
 .blog-text .blog-title{
-  font-size: 1.3rem;
+  font-size: 16px;
   font-weight: 500;
   color: #292929;
+  margin-top: 20px;
 
 }
 
 .blog-text .blog-title:hover{
-  color: #1b1719;
+  color:#6C95A4;
   transition: all ease 0.3s;
 }
 
 .blog-text .snippet_body{
   color: #1c1c1c;
-  font-size: 00.9rem;
+  font-size: 18px;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
   margin: 20px 0px;
+  font-family: 'poppins', sans-serif;
 }
 
 .blog-text a{
-  color: #1b1719;
+  color: #80D3F2;
+  text-transform: uppercase;
+  letter-spacing: 1.5;
+  font-family: 'poppins', sans-serif;
 }
 
 .blog-text a:hover{
   color: #1c1c1c;
   transition: all ease 0.3s;
 }
+
+@media(max-width:1250px){
+  .blog-box{
+    width: 300px;
+  }
+}
+
+@media(max-width:1100px){
+  .blog-box{
+    width: 70%;
+  }
+}
+
+  @media(550px){
+    .blog-box{
+      margin: 20px 10px;
+      width: 100%;
+    }
+    #blog{
+      padding: 20px;
+    }
+  }
+
+
+
 
 /* end */
 

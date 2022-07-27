@@ -1,6 +1,6 @@
 ---
 title: My 3rd Blog Post
-description: This is the third post on my blog
+description: I am Hiba Rajguru and I am a recent graduate in master’s in information technology from university of Wollongong, Wollongong NSW, Australia. 
 tags: ["post" , "featured"]
 date: 2021-06-19
 author: Hiba Rajguru

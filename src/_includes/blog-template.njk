@@ -38,6 +38,11 @@
     <link href="../styles.css" rel="stylesheet"/>
     <link href="../application.css" rel="stylesheet"/>
     <link href="../normalize.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+{# scripting #}
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.0/sweetalert.min.js"></script>
     <script src="/assets/scripts/script.js" defer></script>
@@ -79,12 +84,8 @@
   </head>
   <body>
     {% include 'header.njk' %}
-    <main>
-    {# {{ content | safe }} #}
-
-  {# added the section to make the blogs #}
-
-    <section class="page-layout">
+    
+     <section class="page-layout">
       <div class="container">
          <div class="columns">
             <div class="column is-8 is-offset-2">
@@ -97,11 +98,8 @@
             </div>
           </div>
       </div>
-    </section>
+    </section> 
 
-{# end #}
-
-    </main>
     {% include 'footer.njk' %}
 
     
