@@ -169,7 +169,7 @@ button:hover {
   border-radius: 10px;
 }
 
-.container{
+.container {
   width: 80%;
   margin: 0 auto;
 }
@@ -270,64 +270,63 @@ button:hover {
 
 /* blog css */
 
-*{
+* {
   margin: 0px;
   padding: 0px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   box-sizing: border-box;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-li{
+li {
   list-style: none;
 }
 
-body{
-  margin:0px;
+body {
+  margin: 0px;
   padding: 0px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-
-.content{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   flex-direction: column;
-   padding: 40px;
-   border-bottom: 1px solid;
-}
-
-.blog-heading{
+.content {
   display: flex;
-   justify-content: center;
-   align-items: center;
-   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px;
+  border-bottom: 1px solid;
 }
 
-.main-heading{
+.blog-heading {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-.main-heading h2{
+.main-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main-heading h2 {
   color: #1a657e;
   font-size: 2.4rem;
   font-weight: 600;
 }
 
-.title{
+.title {
   font-size: 2.4rem;
   color: lightblue;
   font-weight: 600;
 }
 
-.blog-container{
+.blog-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -335,52 +334,64 @@ body{
   flex-wrap: wrap;
 }
 
-.blog-box{
+.blog-box {
   width: 350px;
-  background-color: #0d5c63;
-  border: 1px solid #1b1719;
+  /* background-color: #0d5c63; */
+  border: 1px solid #bae27d;
+  border-radius: 10px;
   margin: 10px;
 }
 
-.blog-img{
+.blog-img {
   width: 100%;
   height: auto;
+  padding: 10px;
 }
 
-.blog-img img{
+.blog-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
+  border-radius: 10px;
 }
 
-.blog-text{
+.blog-text {
+  color: #ffffff;
   padding: 30px;
   display: flex;
   flex-direction: column;
 }
 
-.blog-text span{
+.blog-text span :nth-child(1) {
   color: #afe4f6;
   font-size: 0.9rem;
   font-family: 'poppins', sans-serif;
 }
 
-.blog-text .blog-title{
-  font-size: 16px;
-  font-weight: 500;
-  color: #292929;
-  margin-top: 20px;
-
+.blog-text span :nth-child(1) {
+  color: #afe4f6;
 }
 
-.blog-text .blog-title:hover{
-  color:#6C95A4;
+.blog-title {
+  display: flex;
+}
+
+.blog-title a {
+  /* font-size: 16px;
+  font-weight: 500; */
+  color: #6c95a4;
+  margin-top: 20px;
+}
+
+.blog-title a:hover {
+  color: #bae27d;
   transition: all ease 0.3s;
 }
 
-.blog-text .snippet_body{
-  color: #1c1c1c;
+.blog-text .snippet_body {
+  height: 150px;
+  color: #ffffff;
   font-size: 18px;
   display: -webkit-box;
   -webkit-line-clamp: 3;
@@ -391,42 +402,43 @@ body{
   font-family: 'poppins', sans-serif;
 }
 
-.blog-text a{
-  color: #80D3F2;
+.blog-text a :nth-child(2) {
+  color: darkslategray;
   text-transform: uppercase;
   letter-spacing: 1.5;
   font-family: 'poppins', sans-serif;
 }
 
-.blog-text a:hover{
+.blog-text a :nth-child(2):hover {
   color: #1c1c1c;
   transition: all ease 0.3s;
 }
 
-@media(max-width:1250px){
-  .blog-box{
+/* .blog-action-btn {
+  color: #0d5c63;
+} */
+
+@media (max-width: 1250px) {
+  .blog-box {
     width: 300px;
   }
 }
 
-@media(max-width:1100px){
-  .blog-box{
+@media (max-width: 1100px) {
+  .blog-box {
     width: 70%;
   }
 }
 
-  @media(550px){
-    .blog-box{
-      margin: 20px 10px;
-      width: 100%;
-    }
-    #blog{
-      padding: 20px;
-    }
+@media (550px) {
+  .blog-box {
+    margin: 20px 10px;
+    width: 100%;
   }
-
-
-
+  #blog {
+    padding: 20px;
+  }
+}
 
 /* end */
 
@@ -856,7 +868,7 @@ body{
   .footer {
     top: 134%;
   }
-  .footer-logo{    
+  .footer-logo {
     top: 300%;
   }
 }
@@ -865,7 +877,7 @@ body{
   .footer {
     top: 135%;
   }
-  .footer-logo{    
+  .footer-logo {
     top: 200%;
   }
 }
@@ -1385,8 +1397,6 @@ body{
     max-width: 360px;
   }
 
-
-
   .logo-bg {
     max-width: 120px;
     max-height: 200px;
@@ -1525,27 +1535,27 @@ body{
 }
 
 /* blog css */
-div.card{
+div.card {
   width: 80%;
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin-bottom: 25px;
 }
 
-.snippet_image{
+.snippet_image {
   height: 100%;
   width: 100%;
   object-fit: contain;
 }
 
-.snippet_meta{
+.snippet_meta {
   font-size: 5rem;
   color: #1b1719;
   font-family: Arial, Helvetica, sans-serif;
   text-transform: capitalize;
 }
 
-.snippet_body{
+.snippet_body {
   font-size: 1.5rem;
   color: #1b1719;
   font-family: Arial, Helvetica, sans-serif;
