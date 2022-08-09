@@ -452,7 +452,7 @@ body {
 
 @media (max-width: 1600px) {
   .blog-box {
-    width: 250px;
+    width: 240px;
     /* height: 600px; */
   }
   .reading-btn {
@@ -476,7 +476,7 @@ body {
     width: 250px;
   }
 }
-<<<<<<< HEAD
+
 /*
 @media (550px) {
 =======
@@ -792,7 +792,7 @@ body {
 
 .mobile-footer-card {
   display: none;
-  width: 100vw;
+  /* width: 100vw; */
 }
 
 .footer-card {
