@@ -336,7 +336,7 @@ body {
 
 .blog-box {
   width: 350px;
-  background-color: #0d5c63;
+  background-color: transparent;
   border: 1px solid #bae27d;
   border-radius: 10px;
   margin: 10px;
@@ -344,7 +344,7 @@ body {
 }
 
 .blog-box:hover {
-  opacity: 0.8;
+  opacity: 0.5;
 }
 
 .blog-img {
@@ -476,8 +476,13 @@ body {
     width: 250px;
   }
 }
+<<<<<<< HEAD
 /*
 @media (550px) {
+=======
+
+@media (max-width: 550px) {
+>>>>>>> 4960abd64b9dedbffebdba0869e3477c21623388
   .blog-box {
     margin: 20px 10px;
     width: 100%;
