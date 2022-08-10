@@ -37,6 +37,42 @@ h3 {
   text-align: center;
 }
 
+.fa-sitemap:before {
+  position: relative;
+  top: -20px;
+  left: -21px;
+}
+
+.fa-pen-fancy:before {
+  position: relative;
+  top: -17px;
+  left: -17px;
+}
+
+.fa-chart-line:before {
+  position: relative;
+  top: -17px;
+  left: -17px;
+}
+
+.fa-globe:before {
+  position: relative;
+  top: -17px;
+  left: -17px;
+}
+
+.fa-mobile-alt:before {
+  position: relative;
+  top: -17px;
+  left: -11px;
+}
+
+.fa-tools:before {
+  position: relative;
+  top: -18px;
+  left: -17px;
+}
+
 i {
   opacity: 0.5;
   margin-bottom: 5%;
@@ -449,6 +485,20 @@ body {
   letter-spacing: 1.5;
   font-family: 'poppins', sans-serif;
 } */
+
+.blog-body {
+  width: 80vw;
+  display: flex;
+  justify-content: space-around;
+}
+
+.blog-article {
+  width: 50vw;
+}
+
+.blog-image {
+  width: 20vw;
+}
 
 @media (max-width: 1600px) {
   .blog-box {

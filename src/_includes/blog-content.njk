@@ -94,10 +94,15 @@
             <div class="blog-heading">
               <h1 class="title">{{ title }}</h1>
             </div>
-           
+            <div class="blog-body">
+              <div class="blog-article">
                 {{ content | safe }}
-            
-              
+              </div>
+              <div class="blog-image">
+                
+                <image src="{{ image }}" alt="{{ imageAlt }}" class="snippet_image"/> 
+                {# {{ image }} #}
+              </div>
             </div>
           </article>
         </div>
