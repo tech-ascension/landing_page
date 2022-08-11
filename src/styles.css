@@ -29,7 +29,7 @@ h3 {
 
 .fas {
   font-size: 35px !important;
-  padding: 20px;
+  padding: 40px;
   width: 40px;
   height: 40px;
   border: #bae27d solid 1px;
@@ -40,7 +40,7 @@ h3 {
 .fa-sitemap:before {
   position: relative;
   top: -20px;
-  left: -21px;
+  left: -22px;
 }
 
 .fa-pen-fancy:before {
@@ -673,6 +673,26 @@ body {
 .cyan {
   color: #0d5c63;
 }
+.fa-sync:before {
+  position: relative;
+  top: -18px;
+  left: -17px;
+}
+.fa-analytics:before {
+  position: relative;
+  top: -19px;
+  left: -20px;
+}
+.fa-database:before {
+  position: relative;
+  top: -17px;
+  left: -15px;
+}
+.fa-cloud-upload:before {
+  position: relative;
+  top: -19px;
+  left: -20px;
+}
 .icon-wrapper {
   cursor: pointer;
   margin-bottom: 6px;
@@ -801,6 +821,7 @@ body {
   position: absolute;
   z-index: -1;
   bottom: -38%;
+  display: none;
 }
 
 .socials-content {
@@ -850,10 +871,18 @@ body {
   align-items: center;
   /* justify-content: center; */
   z-index: 100;
+  height: 30vh;
   width: 100%;
   background-color: #0d5c63;
   overflow: hidden;
   background-size: cover;
+  /* margin-top: -263px; */
+}
+
+@media (max-width: 1170px) {
+  .footer {
+    height: 45vh;
+  }
 }
 
 .mobile-footer-card {
@@ -1602,9 +1631,6 @@ body {
   .brand-container h2 {
     font-size: 18px;
     margin-bottom: 10px;
-  }
-
-  .socials-vector-1 {
   }
 
   .footer {
