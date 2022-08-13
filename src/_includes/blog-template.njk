@@ -1,0 +1,122 @@
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta
+    name="viewport"
+    content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi"
+  />
+  <meta
+    name="description"
+    content="Ascension Cloud Solutions is a software consultancy agency dedicated to delivering premium technological solutions for a wide range of business use cases. Our software is dedicated to supporting your business, and we are dedicated to supporting you within your venture. Our experts will be able to design efficient and robust systems that can integrate to external or pre-existing systems within your project. We help you understand your vision from a technological perspective and help you execute upon it accordingly. If you are looking for a local web designer in wollongong, then feel free to get in contact with us for a FREE consultation."
+  />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@ascensionvision" />
+  <meta name="twitter:creator" content="@ConnerGoldberg" />
+  <meta name="twitter:title" content="Ascension Cloud Solutions" />
+  <meta
+    name="twitter:description"
+    content="Ascension Cloud Solutions is a software consultancy agency dedicated to delivering premium technological solutions for a wide range of business use cases. Our software is dedicated to supporting your business, and we are dedicated to supporting you within your venture. Our experts will be able to design efficient and robust systems that can integrate to external or pre-existing systems within your project. We help you understand your vision from a technological perspective and help you execute upon it accordingly."
+  />
+  <meta name="twitter:image" content="http://ascensioncloudsolutions.com/" />
+  <meta name="og:url" content="Ascension Cloud Solutions" />
+  <meta name="og:title" content="Ascension Cloud Solutions" />
+  <meta
+    name="og:description"
+    content="Ascension Cloud Solutions is a software consultancy agency dedicated to delivering premium technological solutions for a wide range of business use cases. Our software is dedicated to supporting your business, and we are dedicated to supporting you within your venture. Our experts will be able to design efficient and robust systems that can integrate to external or pre-existing systems within your project. We help you understand your vision from a technological perspective and help you execute upon it accordingly."
+  />
+  <meta name="og:image" content="https://ascensioncloudsolutions.com/assets/images/transparent_brand.png" />
+  <meta name="og:image:alt" content="Website brand logo" />
+  <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+  <meta name="msapplication-TileColor" content="#da532c" />
+  <meta name="theme-color" content="#ffffff" />
+  <link rel="canonical" href="https://ascensioncloudsolutions.com" />
+  <link href="../../styles.css" rel="stylesheet" />
+  <link href="../../application.css" rel="stylesheet" />
+  <link href="../../normalize.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  {# scripting #}
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.0/sweetalert.min.js"></script>
+  <script src="/assets/scripts/script.js" defer></script>
+
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" defer></script>
+
+  <script id="mcjs">
+    !(function (c, h, i, m, p) {
+      (m = c.createElement(h)),
+        (p = c.getElementsByTagName(h)[0]),
+        (m.async = 1),
+        (m.src = i),
+        p.parentNode.insertBefore(m, p);
+    })(
+      document,
+      'script',
+      'https://chimpstatic.com/mcjs-connected/js/users/2e33e53404e6e2528bc8e75f5/494e93923ee1e02207a4ecdf9.js',
+    );
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-202002438-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-202002438-1');
+  </script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
+  <link
+    rel="stylesheet"
+    href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+    crossorigin="anonymous"
+  />
+  <title>
+    {{ title }}
+  </title>
+</head>
+<body>
+  {% include 'header.njk' %}
+
+  <section class="page-layout">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-8 is-offset-2">
+          <article class="content mt-5">
+            <div class="blog-heading">
+              <h1 class="title">{{ title }}</h1>
+            </div>
+           
+                {{ content | safe }}
+            
+              
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+    {% include 'about-contact-card.njk' %}
+  </section>
+
+  {% include 'footer.njk' %}
+
+  <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on('init', (user) => {
+        if (!user) {
+          window.netlifyIdentity.on('login', () => {
+            document.location.href = '/admin/';
+          });
+        }
+      });
+    }
+  </script>
+</body>
