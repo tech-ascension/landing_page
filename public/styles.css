@@ -415,6 +415,7 @@ body {
   color: #ffffff;
   font-size: 0.9rem;
   font-family: 'poppins', sans-serif;
+  min-height: 35px;
 }
 
 /* .blog-text span :nth-child(1) {
