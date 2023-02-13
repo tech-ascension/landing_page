@@ -329,18 +329,9 @@ body {
 
 .content {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
   margin-top: 40px;
   /* padding: 10px; */
-}
-
-.blog-heading {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
 }
 
 .main-heading {
@@ -360,6 +351,7 @@ body {
   font-size: 2.4rem;
   color: lightblue;
   font-weight: 600;
+  text-align: left;
 }
 
 .blog-container {
@@ -487,18 +479,12 @@ body {
   font-family: 'poppins', sans-serif;
 } */
 
-.blog-body {
-  display: flex;
-  justify-content: space-around;
-}
-
 .blog-article {
-  width: 40vw;
-  margin-right: 2%;
-}
-
-.blog-image {
-  width: 50vw;
+  padding: 2%;
+  margin-bottom: 2%;    
+  border: 1px solid #bae27d;
+  box-shadow: 1px 2px 3px 4px rgb(20 20 20 / 40%);
+  border-radius: 10px;
 }
 
 @media (max-width: 1826px) {
