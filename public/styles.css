@@ -380,7 +380,6 @@ body {
 
 .blog-img {
   width: 100%;
-  /* height: auto; */
   padding: 10px;
 }
 
@@ -521,23 +520,6 @@ body {
     width: 250px;
   }
 }
-
-/*
-@media (550px) {
-=======
-
-@media (max-width: 550px) {
->>>>>>> 4960abd64b9dedbffebdba0869e3477c21623388
-  .blog-box {
-    margin: 20px 10px;
-    width: 100%;
-  }
-  #blog {
-    padding: 20px;
-  }
-} */
-
-/* end */
 
 /* Containers & Wrappers */
 
