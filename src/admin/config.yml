@@ -2,7 +2,8 @@ backend:
   name: bitbucket
   repo: ascension-cloud-solutions/landing_page
   branch: master
-  auth_type: oauth
+  auth_type: implicit
+  app_id: hgw8CLzKYSaFaE8vPn
 
 media_folder: "public/assets/images"
 public_folder: "/assets/images"
