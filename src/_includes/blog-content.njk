@@ -90,19 +90,19 @@
     <div class="container">
       <div class="columns">
         <div class="column is-8 is-offset-2">
-          <article class="content mt-5">
+          <article class="content mt-5"> 
             <div class="blog-heading">
               <h1 class="title">{{ title }}</h1>
             </div>
+            <p>{{ author }} | {{ date | date("D MMM") }}</p>
             <div class="blog-body">
               <div class="blog-article">
                 {{ content | safe }}
               </div>
-              <div class="blog-image">
-                
-                <image src="{{ image }}" alt="{{ imageAlt }}" class="snippet_image"/> 
-                {# {{ image }} #}
-              </div>
+            </div>
+            <div class="blog-image">
+              <image src="{{ image }}" alt="{{ imageAlt }}" class="snippet_image"/> 
+              {# {{ image }} #}
             </div>
           </article>
         </div>
