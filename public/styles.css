@@ -27,6 +27,10 @@ h3 {
   text-align: center;
 }
 
+h3 strong {
+  text-align: left;
+}
+
 .fas {
   font-size: 35px !important;
   padding: 40px;
