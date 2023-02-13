@@ -368,12 +368,14 @@ body {
   border: 1px solid #bae27d;
   box-shadow: 1px 2px 3px 4px rgba(20, 20, 20, 0.4);
   border-radius: 10px;
-  margin: 10px;
+  margin: 20px;
   cursor: pointer;
 }
 
 .blog-box:hover {
   opacity: 0.5;
+  transform: scale(1.1);
+  transition: 0.2s ease-in-out;
 }
 
 .blog-img {
