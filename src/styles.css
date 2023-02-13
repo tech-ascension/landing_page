@@ -136,8 +136,10 @@ body {
   background-color: #bae27d;
   cursor: pointer;
   min-width: 150px;
-  margin: 0px auto;
+  margin: 20px auto; /* changed from 0px auto */
   text-transform: uppercase;
+  text-align: center;
+  font-size: 12px;
 }
 
 .btn-primary:hover {
@@ -363,28 +365,34 @@ body {
 }
 
 .blog-box {
-  width: 350px;
+  width: 30%;
+  height: 700px;
+  max-height: 700px; /* added height */
   background-color: transparent;
   border: 1px solid #bae27d;
-  box-shadow: 1px 2px 3px 4px rgba(20, 20, 20, 0.4);
+  box-shadow: 1px 2px 3px 4px rgb(20 20 20 / 40%);
   border-radius: 10px;
-  margin: 10px;
+  margin: 20px;
   cursor: pointer;
+  display: flex; /* added display: flex */
+  flex-direction: column; /* added flex-direction */
 }
 
 .blog-box:hover {
+  transform: scale(1.1);
+  transition: 0.2s ease-in-out;
   opacity: 0.5;
 }
 
 .blog-img {
   width: 100%;
-  /* height: auto; */
+  height: 200px; /* added height */
   padding: 10px;
 }
 
 .blog-img img {
   width: 100%;
-  /* height: 100%; */
+  height: 100%; /* added height */
   object-fit: cover;
   object-position: center;
   border-radius: 10px;
@@ -395,6 +403,7 @@ body {
   padding: 30px;
   display: flex;
   flex-direction: column;
+  flex: 1; /* added flex: 1 */
 }
 
 .blog-text span {
@@ -403,9 +412,6 @@ body {
   font-family: 'poppins', sans-serif;
 }
 
-.blog-text span {
-  color: #ffffff;
-}
 /* .blog-text span :nth-child(1) {
   color: #afe4f6;
   font-size: 0.9rem;
@@ -418,6 +424,9 @@ body {
 
 .blog-title {
   display: flex;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .blog-title a {
@@ -447,10 +456,9 @@ body {
 } */
 
 .blog-text .snippet_body {
-  height: 150px;
+  height: 100px;
   color: #ffffff;
-  /* color: #1c1c1c; */
-  font-size: 18px;
+  font-size: 12px;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
@@ -1675,7 +1683,7 @@ div.card {
 .snippet_image {
   width: 100%;
   border-radius: 65px;
-  box-shadow: 1px 2px 3px 4px rgba(20, 20, 20, 0.4);
+  box-shadow: 1px 2px 3px 4px rgb(20 20 20 / 40%);
 }
 
 .snippet_meta {
