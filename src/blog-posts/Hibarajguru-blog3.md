@@ -12,7 +12,7 @@ description: 'The article "Outsourcing Software Development for Startups: The
   economy, and cultural alignment. The article concludes by outlining the steps
   startups can take to get started with outsourcing software development in
   Australia.'
-author: Hiba Rajguru
+author: Conner Goldberg
 date: 2021-06-19
 tags:
   - post
