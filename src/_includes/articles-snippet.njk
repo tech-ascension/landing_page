@@ -1,13 +1,8 @@
-
-    <div class="blog-container">
-        <div class="blog-box">
-            <div class="blog-img">
-               <image src="{{post.data.image}}" alt="{{post.data.imageAlt}}" class="snippet_image"/> 
-            </div>
-            <div class="blog-text">
-                <span>{{post.data.author}} | {{post.date | postDate}}</span> 
-                 <h3 class="blog-title"><a>{{ post.data.title}}</a></h3>
-                 <p class="snippet_body">{{post.data.description}}</p> 
-                 <a  class="btn-primary reading-btn" href="{{post.url}}">Continue Reading</a>
-            </div>
-    </div>
+<div class="flex flex-col gap-2">
+    <a  href="{{post.url}}"><img src="{{post.data.image}}" alt="{{post.data.imageAlt}}" class="object-cover aspect-video rounded-xl"> </a>
+    <a  href="{{post.url}}"><p class="text-sm">{{post.data.author}} | {{post.date | postDate}}</p></a>
+    <a  href="{{post.url}}"><h3 class="text-2xl font-bold">{{ post.data.title}}</h3></a>
+    {% if exerpt %}
+        <a  href="{{post.url}}"><p>{{post.data.description | makeExcerpt}}</p></a>
+    {% endif %}
+</div>

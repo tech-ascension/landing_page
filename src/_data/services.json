@@ -1,0 +1,32 @@
+[
+    {
+        "title": "Technical Consultation",
+        "description": "Not sure what technologies will be the right fit for your business? Our team has worked with various successful e-business strategies and assisted getting them to market from the ground up. We know what it takes to integrate technology seamlessly with your platform. From disaster management strategies to software support & maintenance, we've been through it all.",
+        "icon": "fas fa-sitemap fa-2x"
+    },
+    {
+        "title": "Design & Architecture",
+        "description": "No design yet? Not sure what tools you'll need? No problem, we consult experts in the field to bring your ideas to life. We have a project package suitable for a variety of budgets and can guide you every step of the way.",
+        "icon": "fas fa-pen-fancy fa-2x"
+    },
+    {
+        "title": "Product Development",
+        "description": "Already have a design in place and just need to find a service to get you to market? Our developers are dedicated to ensuring that you leave with a stable, responsive application which will scale effectively to your use case. Whether it is an application that needs to be built from the ground up, or something you already have that requires some finishing touches, no job is too big or too small. Our team is standing by ready to help you ascend to a new level of success.",
+        "icon": "fas fa-chart-line fa-2x"
+    },
+    {
+        "title": "Ready to take the next step",
+        "description": "Ready to take the next step in your online journey and dramatically improve the way you do business? Let our team help you put together a stunning website and fast track your success with all the tools you need to conduct a professional marketing platform for your business.",
+        "icon": "fas fa-globe fa-2x"
+    },
+    {
+        "title": "Custom Mobile & Web Applications",
+        "description": "Do you need to create something unique and cater more towards the specific needs within your industry? Our team can assist with every stage of custom development required for your web or mobile app idea! Our end to end design, develop, and test practice will deliver the means for you to blow your competitors out of the water.",
+        "icon": "fas fa-mobile-alt fa-2x"
+    },
+    {
+        "title": "Support & Maintenance",
+        "description": "Struggling with an application that is already built and not sure where to turn? Are you having to manage legacy code leftover from a team of developers who are no longer able to support the project? We are happy to tackle any problem in order to get you a solution that delivers you a result that best accommodates your every need. We employ experts in integrations and migrations who bridge the gap between legacy and bleeding edge tech. Let's get you back on track!",
+        "icon": "fas fa-tools fa-2x"
+    }
+]
