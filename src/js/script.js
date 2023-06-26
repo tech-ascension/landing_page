@@ -8,6 +8,7 @@ const form = document.getElementById('mc-embedded-subscribe-form');
 const contactForm = document.getElementById('fs-embedded-contact-form');
 const blogBox = document.getElementsByClassName('blog-box');
 let brandRowLoaded = false;
+const contactButtons = document.getElementsByClassName('no-smoothState open-contact');
 
 // toggleButton.addEventListener('click', () => {
 //   navbar.classList.toggle('fixed');
@@ -17,13 +18,13 @@ let brandRowLoaded = false;
 //   body.classList.toggle('skele-active');
 // });
 
-navbarLinks.addEventListener('click', () => {
-  // navbar.classList.toggle('fixed');
-  navbarLinks.classList.toggle('active');
-  navbarLinks.classList.toggle('fade-in-menu');
-  // toggleButton.classList.toggle('open');
-  body.classList.toggle('skele-active');
-});
+// navbarLinks.addEventListener('click', () => {
+//   // navbar.classList.toggle('fixed');
+//   navbarLinks.classList.toggle('active');
+//   navbarLinks.classList.toggle('fade-in-menu');
+//   // toggleButton.classList.toggle('open');
+//   body.classList.toggle('skele-active');
+// });
 
 const linkRx = /<a\s+(?:[^>]*?\s+)?href=(["'])(.*?)\1/;
 Object.values(blogBox).forEach((value) => {

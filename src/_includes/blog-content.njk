@@ -5,23 +5,23 @@ layout: base.njk
 <section>
     <div class="container flex flex-col justify-between gap-12 px-5 py-10 mx-auto lg:gap-24 lg:py-20 lg:flex-row">
         <article class="flex-1 max-w-5xl ">
-            <h1 class="text-4xl font-black text-green-200 lg:text-5xl">{{title}}</h1>
+            <h1 class="text-4xl font-black text-primary lg:text-5xl">{{ title }}</h1>
             <p class="mt-4">
                 <span class="font-bold">{{ author }}
                 </span>
                 | {{ date | date("D MMM") }}</p>
-            <img src="{{ image }}" alt="{{ imageAlt }}" class="object-cover w-full max-w-5xl mx-auto mt-8 aspect-video rounded-xl"/>
-            <div class="max-w-5xl py-10 mx-auto prose prose-invert lg:py-20 prose-a:text-green-200">
-                {{content | safe}}
+            <img src="{{ image }}" alt="{{ imageAlt }}" class="object-cover w-full max-w-5xl mx-auto mt-8 transition-transform aspect-video rounded-xl hover:rotate-2"/>
+            <div class="max-w-5xl py-10 mx-auto prose prose-invert lg:py-20 prose-a:text-primary">
+                {{ content | safe }}
             </div>
         </article>
         <div class="w-full lg:max-w-xs">
             <h6 class="text-2xl font-bold">Recent Posts</h6>
             <div class="grid gap-12 mt-16 md:grid-cols-2 lg:grid-cols-1">
-                {%-for post in collections.post | reverse | slice(2) -%}
+                {%- for post in collections.post | reverse | slice(2) -%}
                     {% set exerpt = false %}
-                    {% include 'articles-snippet.njk'%}
-                {%-endfor-%}
+                    {% include 'articles-snippet.njk' %}
+                {%- endfor -%}
             </div>
         </div>
     </div>

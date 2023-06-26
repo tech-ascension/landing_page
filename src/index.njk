@@ -6,19 +6,22 @@ layout: 'base.njk'
 <section>
   <div class="container relative flex flex-col items-center px-5 py-24 mx-auto overflow-hidden text-center lg:pt-36 lg:pb-44">
     <img src="/assets/images/footer-phone.png" alt="" class="absolute right-0 h-full -bottom-1/2 opacity-30">
-      <h1 class="z-10 text-4xl font-black text-green-200 lg:text-6xl">Ascend to the next level of business</h1>
+      <h1 class="z-10 text-4xl font-black text-primary lg:text-6xl">Ascend to the next level of business</h1>
       <p class="z-10 max-w-5xl mt-4 lg:text-xl">
         We focus on providing the best level of service for people first. Our UX-design solutions are developed according to
         your business requirements and bring you as close to your customers as possible. Why wait? Book your FREE 1-hour
         consultation with us today!
       </p>
-      <button class="z-10 px-6 py-2 mt-8 font-bold text-black uppercase bg-green-200 rounded-full lg:text-xl" type="submit">
+      <button
+        class="z-10 px-6 py-2 mt-8 font-bold text-black uppercase transition-opacity rounded-full bg-primary lg:text-xl
+          open-contact hover:opacity-70"
+        type="submit">
         Enquire now</button>
     </div>
   </section>
-  <section class="mb-10 shadow-2xl bg-neutral-800 shadow-green-200/20">
+  <section class="mb-10 shadow-2xl bg-neutral-800 shadow-primary/20">
     <div class="container px-5 py-5 mx-auto lg:py-10">
-      <h2 class="text-3xl font-bold text-center text-green-200 md:text-4xl lg:text-5xl">Make your vision a reality...</h2>
+      <h2 class="text-3xl font-bold text-center text-primary md:text-4xl lg:text-5xl">Make your vision a reality...</h2>
       <form
         class="flex justify-center mt-8"
         action="https://ascensioncloudsolutions.us1.list-manage.com/subscribe/post?u=2e33e53404e6e2528bc8e75f5&amp;id=82deab1b99"
@@ -41,18 +44,19 @@ layout: 'base.njk'
           value="Subscribe"
           name="subscribe"
           id="mc-embedded-subscribe"
-          class="px-6 py-2 font-bold text-black uppercase bg-green-200 rounded-full"/>
+          class="px-6 py-2 font-bold text-black uppercase transition-opacity rounded-full cursor-pointer bg-primary
+            hover:opacity-70"/>
       </form>
     </div>
   </section>
   <section class="pt-10" id="services">
     <div class="container px-5 py-5 mx-auto lg:py-10">
-      <h2 class="text-3xl font-bold text-center text-green-200 md:text-4xl lg:text-5xl">Our services</h2>
+      <h2 class="text-3xl font-bold text-center text-primary md:text-4xl lg:text-5xl">Our services</h2>
       <div class="grid justify-center gap-8 mt-16 lg:grid-cols-3 ">
         {% for i in range(0, 3) %}
           <div class="max-w-xl p-4 transition-colors duration-300 rounded-lg hover:bg-neutral-800 h-fit">
-            <i class="{{ services[i].icon }} text-green-200/50"></i>
-            <h3 class="mt-4 text-2xl font-bold text-green-200">{{ services[i].title }}</h3>
+            <i class="{{ services[i].icon }} text-primary/50"></i>
+            <h3 class="mt-4 text-2xl font-bold text-primary">{{ services[i].title }}</h3>
             <p class="mt-4 text-justify">{{ services[i].description }}</p>
           </div>
         {% endfor %}
@@ -61,14 +65,16 @@ layout: 'base.njk'
   </section>
   <section class="px-5 my-16">
     <div class="container flex flex-col items-center justify-between max-w-5xl gap-8 px-5 py-5 mx-auto text-center text-black
-        bg-green-100 rounded-xl lg:flex-row ">
+        bg-primary rounded-xl lg:flex-row ">
       <h2 class="font-bold">Book your free 1-hour consultation and get one step closer to making your vision a reality!</h2>
-      <a href="/" class="px-6 py-2 font-bold text-green-200 uppercase bg-black rounded-full whitespace-nowrap">Get started</a>
+      <button class="px-6 py-2 font-bold uppercase transition-opacity bg-black rounded-full text-primary whitespace-nowrap open-contact
+          hover:opacity-80">
+        Get started</button>
     </div>
   </section>
   <section id="about">
     <div class="container px-5 py-10 mx-auto lg:py-20">
-      <h2 class="text-3xl font-bold text-center text-green-200 md:text-4xl lg:text-5xl">About us</h2>
+      <h2 class="text-3xl font-bold text-center text-primary md:text-4xl lg:text-5xl">About us</h2>
       <p class="max-w-5xl mx-auto mt-8">
         Ascension Cloud Solutions is a tech consulting agency based in Wollongong. We work with experts in a wide range of
         technologies and practices in order to provide businesses a holistic approach that ensures a stable design, execution,
@@ -79,13 +85,13 @@ layout: 'base.njk'
   </section>
   <section class="pt-10">
     <div class="container px-5 py-5 mx-auto lg:py-10">
-      <h2 class="text-3xl font-bold text-center text-green-200 md:text-4xl lg:text-5xl">Branding & Responsive Websites
+      <h2 class="text-3xl font-bold text-center text-primary md:text-4xl lg:text-5xl">Branding & Responsive Websites
       </h2>
       <div class="grid justify-center gap-8 mt-16 lg:grid-cols-3">
         {% for i in range(3, 6) %}
           <div class="max-w-xl p-4 transition-colors duration-300 rounded-lg hover:bg-neutral-800 h-fit">
-            <i class="{{ services[i].icon }} text-green-200/50"></i>
-            <h3 class="mt-4 text-2xl font-bold text-green-200">{{ services[i].title }}</h3>
+            <i class="{{ services[i].icon }} text-primary/50"></i>
+            <h3 class="mt-4 text-2xl font-bold text-primary">{{ services[i].title }}</h3>
             <p class="mt-4 text-justify">{{ services[i].description }}</p>
           </div>
         {% endfor %}
@@ -94,14 +100,16 @@ layout: 'base.njk'
   </section>
   <section class="px-5 my-16 ">
     <div class="container flex flex-col items-center justify-between max-w-5xl gap-8 px-5 py-5 mx-auto text-center text-black
-        bg-green-100 rounded-xl lg:flex-row ">
+        bg-primary rounded-xl lg:flex-row ">
       <h2 class="font-bold">Book your free 1-hour consultation and get one step closer to making your vision a reality!</h2>
-      <a href="/" class="px-6 py-2 font-bold text-green-200 uppercase bg-black rounded-full whitespace-nowrap">Get started</a>
+      <button class="px-6 py-2 font-bold uppercase transition-opacity bg-black rounded-full text-primary whitespace-nowrap open-contact
+          hover:opacity-80">
+        Get started</button>
     </div>
   </section>
   <section id="vision">
     <div class="container px-5 py-10 mx-auto lg:py-20">
-      <h2 class="text-3xl font-bold text-center text-green-200 md:text-4xl lg:text-5xl">Our vision</h2>
+      <h2 class="text-3xl font-bold text-center text-primary md:text-4xl lg:text-5xl">Our vision</h2>
       <p class="max-w-5xl mx-auto mt-8">
         Like our mission says...We are all about bringing your vision to life and executing a precision based approach to your
         design and implementation. Why risk tens of thousands of dollars by investing in an idea without a dedicated expert in
@@ -112,7 +120,7 @@ layout: 'base.njk'
       <div class="grid max-w-5xl grid-cols-2 gap-8 mx-auto mt-10 lg:grid-cols-4 lg:mt-20">
         {% for v in vision %}
           <div class="flex flex-col p-8 overflow-hidden text-center text-black transition-all duration-300 rounded-lg cursor-pointer
-              bg-neutral-300 hover:bg-white group hover:shadow-xl hover:shadow-white/40">
+              open-contact bg-neutral-300 hover:bg-white group hover:shadow-xl hover:shadow-white/40">
             <i class="{{ v.icon }}"></i>
             <h3 class="mt-4 text-xl">{{ v.title }}</h3>
           </div>

@@ -4,14 +4,12 @@ layout: 'base.njk'
 ---
 
 <section>
-  <div class="container px-5 py-10 mx-auto lg:py-20">
-      <h2 class="text-4xl font-black text-green-200 lg:text-5xl">Recent Articles</h2>
-      <div class="grid gap-16 mt-20 md:grid-cols-2 lg:grid-cols-3">
-        {%-for post in collections.post | reverse -%}
-            {% include 'articles-snippet.njk'%}
-        {%-endfor-%}
-      </div>
-  </div>
-</section>
-
-
+    <div class="container px-5 py-10 mx-auto lg:py-20">
+        <h2 class="text-4xl font-black text-primary lg:text-5xl">Recent Articles</h2>
+        <div class="grid gap-16 mt-20 md:grid-cols-2 lg:grid-cols-3">
+            {%-for post in collections.post | reverse -%}
+                {% include 'articles-snippet.njk'%}
+                {%-endfor-%}
+            </div>
+        </div>
+    </section>
