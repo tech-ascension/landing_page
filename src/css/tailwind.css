@@ -1426,18 +1426,6 @@ video {
   opacity: 0.05;
 }
 
-.opacity-70 {
-  opacity: 0.7;
-}
-
-.opacity-20 {
-  opacity: 0.2;
-}
-
-.opacity-50 {
-  opacity: 0.5;
-}
-
 .shadow-2xl {
   --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
   --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
@@ -1492,25 +1480,8 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.hover\:text-primary:hover {
-  --tw-text-opacity: 1;
-  color: rgb(186 226 125 / var(--tw-text-opacity));
-}
-
-.hover\:opacity-95:hover {
-  opacity: 0.95;
-}
-
-.hover\:opacity-80:hover {
-  opacity: 0.8;
-}
-
 .hover\:opacity-50:hover {
   opacity: 0.5;
-}
-
-.hover\:opacity-20:hover {
-  opacity: 0.2;
 }
 
 .hover\:opacity-60:hover {
@@ -1521,12 +1492,8 @@ video {
   opacity: 0.7;
 }
 
-.hover\:opacity-90:hover {
-  opacity: 0.9;
-}
-
-.hover\:opacity-100:hover {
-  opacity: 1;
+.hover\:opacity-80:hover {
+  opacity: 0.8;
 }
 
 .hover\:shadow-xl:hover {
@@ -1543,10 +1510,6 @@ video {
 .group:hover .group-hover\:rotate-2 {
   --tw-rotate: 2deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.group:hover .group-hover\:opacity-100 {
-  opacity: 1;
 }
 
 .prose-a\:text-primary :is(:where(a):not(:where([class~="not-prose"] *))) {
