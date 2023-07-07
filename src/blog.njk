@@ -1,15 +1,47 @@
 ---
 title: Blog
 layout: 'base.njk'
+pagination:
+    data: posts
+    size: 4
+    reverse: true
 ---
 
 <section>
     <div class="container px-5 py-10 mx-auto lg:py-20">
-        <h2 class="text-4xl font-black text-primary lg:text-5xl">Recent Articles</h2>
+        <h2 class="text-4xl font-black text-center text-primary lg:text-5xl">Featured Articles</h2>
         <div class="grid gap-16 mt-20 md:grid-cols-2 lg:grid-cols-3">
-            {%-for post in collections.post | reverse -%}
-                {% include 'articles-snippet.njk'%}
-                {%-endfor-%}
-            </div>
+            {%- for post in posts | filterFeaturedPosts | reverse | slice(3) -%}
+                {% include 'articles-snippet.njk' %}
+            {%- endfor -%}
         </div>
-    </section>
+    </div>
+</section>
+<section>
+    <div class="container px-5 py-10 mx-auto lg:py-20">
+        <h2 class="text-4xl font-black text-center text-primary lg:text-5xl">Recent Articles</h2>
+        <div class="grid gap-16 mt-20 md:grid-cols-2 lg:grid-cols-3">
+            {%- for post in posts | reverse | slice(1) -%}
+                {% include 'large-articles-snippet.njk' %}
+            {%- endfor -%}
+            {%- for post in pagination.items | removeFirstItem -%}
+                {% include 'articles-snippet.njk' %}
+            {%- endfor -%}
+        </div>
+        <div class="flex items-center justify-center gap-4 text-white mt-28">
+            {% if pagination.href.previous %}
+                <a href="{{ pagination.href.previous }}" title="Previous page" class="pagination_button" {% if not pagination.href.previous %} disabled {% endif %}>
+                    <i class="fas fa-chevron-left fa-2x"></i>
+                </a>
+            {% endif %}
+            {%- for pageEntry in pagination.pages %}
+                <a href="{{ pagination.hrefs[ forloop.index0 ] }}" {% if page.url == pagination.hrefs[ forloop.index0 ] %} aria-current="page" aria-disabled="true" disabled {% endif %} class="pagination_button" title="Page {{ forloop.index }}">{{ forloop.index }}</a>
+            {%- endfor %}
+            {% if pagination.href.next %}
+                <a href="{{ pagination.href.next }}" title="Next Page" class="pagination_button" {% if not pagination.href.next %} disabled {% endif %}>
+                    <i class="fas fa-chevron-right fa-2x"></i>
+                </a>
+            {% endif %}
+        </div>
+    </div>
+</section>

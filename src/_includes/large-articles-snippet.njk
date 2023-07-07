@@ -1,0 +1,16 @@
+<div class="flex flex-col gap-2 rounded-xl lg:flex-row lg:col-span-3 h-fit lg:grid lg:grid-cols-2">
+    <a href="/blog/{{ post.slug }}" class="h-full lg:w-full">
+        <img src="{{ post.coverImage.url }}" alt="{{ post.imageAlt }}" class="object-cover w-full h-full transition-transform aspect-video rounded-xl hover:rotate-2">
+    </a>
+    <div class="lg:p-8">
+        <a href="/blog/{{ post.slug }}">
+            <p class="text-sm">{{ post.author.name }} | {{ post.date | postDate }}</p>
+        </a>
+        <a href="/blog/{{ post.slug }}">
+            <h3 class="text-2xl font-bold">{{ post.title }}</h3>
+        </a>
+        <a href="/blog/{{ post.slug }}">
+            <p class="hidden mt-4 lg:block">{{ post.content.text | removeEscapes | makeExcerpt }}</p>
+        </a>
+    </div>
+</div>

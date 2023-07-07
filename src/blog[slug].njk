@@ -1,0 +1,23 @@
+---
+pagination:
+    data: posts
+    size: 1
+    alias: post
+    addAllPagesToCollections: true
+permalink: "/blog/{{ post.slug }}/"
+tags: post
+layout: 'blog-content.njk'
+templateEngineOverride: md, njk
+eleventyComputed:
+    title: "{{ post.title }}"
+    author: "{{ post.author.name }}"
+    slug: "{{ post.slug }}"
+    image: "{{post.coverImage.url}}"
+    description: "{{ post.description }}"
+    date: "{{ post.date }}"
+    id: "{{ post.id }}"
+
+
+---
+
+{{ post.content.html | safe }}

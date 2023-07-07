@@ -1,3 +1,12 @@
+<script src="https://www.google.com/recaptcha/api.js?render=6Lekx-omAAAAAC3q7rjsHYntOlDGum0Oi4OI6X7B"></script>
+<script>
+    grecaptcha.ready(function () {
+        grecaptcha.execute('6Lekx-omAAAAAC3q7rjsHYntOlDGum0Oi4OI6X7B', {action: 'submit'}).then(function (token) {
+            console.info("got token: " + token);
+            document.getElementById('g-recaptcha-response').value = token;
+        });
+    });
+</script>
 <div class="about-contact">
     <div id="contact-half" class="half-contact is-contact">
         <div class="form-loader">
@@ -38,13 +47,20 @@
                         <textarea id="message" name="message" spellcheck="false"></textarea>
                         <label class="label">Message</label>
                     </div>
+                    <div class="input">
+                        <input
+                            type="hidden"
+                            id="g-recaptcha-response"
+                            name="g-recaptcha-response"
+                            data-sitekey="6Lekx-omAAAAAC3q7rjsHYntOlDGum0Oi4OI6X7B">
+                    </div>
                     <div class="inner-container">
                         <input
                             type="submit"
                             value="Book Consultation"
                             name="subscribe"
                             id="mc-embedded-subscribe"
-                            class="px-6 py-2 mt-4 font-bold text-black uppercase bg-primary rounded-full button btn-primary"/>
+                            class="px-6 py-2 mt-4 font-bold text-black uppercase rounded-full bg-primary button btn-primary"/>
                         <div class="button-mask "></div>
                     </div>
                     <div id="mce-responses" class="clear">
@@ -73,3 +89,8 @@
         </div>
     </div>
 </div>
+<style>
+    .grecaptcha-badge {
+        visibility: hidden;
+    }
+</style>
