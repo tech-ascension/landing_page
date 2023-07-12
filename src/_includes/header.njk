@@ -1,36 +1,50 @@
-<nav class="navbar">
-    <div class="menu">
+<header>
+    <div class="container relative flex items-center justify-between px-5 py-5 mx-auto">
         <a href="/">
-            <img class="logo-icon" src="/assets/images/transparentLogo.png" alt="logo-icon"/>
+            <img class="h-20 lg:hidden" src="/assets/images/transparentLogo.png" alt="Ascension Cloud Solutions"/>
+            <img class="hidden lg:block h-14" src="/assets/images/transparent_brand.png" alt="Ascension Cloud Solutions"/>
         </a>
-        <div class="branding">
-            <a href="#">
-                <img class="logo" src="/assets/images/transparent_brand.png" alt="logo"/></a>
-            <a href="#" class="toggle-button">
-                <div class="burger"></div>
-            </a>
-        </div>
-    </div>
-    <div class="navbar-links">
-        <ul>
+        <button class="lg:hidden" onclick="openHeader()">
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewbox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-8 h-8">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
+            </svg>
+        </button>
+        <ul class="absolute left-0 z-50 flex-col items-center hidden w-full gap-12 py-20 text-lg font-bold bg-black text-primary
+                navbar-links lg:py-0 rounded-b-3xl lg:w-fit lg:flex-row lg:bg-transparent lg:gap-4 top-full lg:flex lg:relative
+                lg:text-white lg:text-base">
             <li>
-                <a href="/">Home</a>
+                <a href="/" class="transition-opacity hover:opacity-50">Home</a>
             </li>
             <li>
-                <a href="/#services">Services</a>
+                <a href="/#services" class="transition-opacity hover:opacity-50">Services</a>
             </li>
             <li>
-                <a href="/#about-us">About Us</a>
+                <a href="/#about" class="transition-opacity hover:opacity-50">About Us</a>
             </li>
             <li>
-                <a href="/#vision">Our Vision</a>
+                <a href="/#vision" class="transition-opacity hover:opacity-50">Our Vision</a>
             </li>
             <li>
-                <a href="/blog">Blog</a>
+                <a href="/blog" class="transition-opacity hover:opacity-50">Blog</a>
             </li>
             <li>
-                <a href="" class="no-smoothState open-contact">Contact</a>
+                <button class="no-smoothState open-contact" class="transition-opacity hover:opacity-50">Contact</button>
             </li>
         </ul>
     </div>
-</nav>
+</header>
+<script>
+    const openHeader = () => {
+        const nav = document.querySelector('.navbar-links');
+        const main = document.querySelector('main');
+        nav.classList.toggle('flex');
+        nav.classList.toggle('hidden');
+        main.classList.toggle('opacity-5')
+    }
+</script>
