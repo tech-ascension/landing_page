@@ -1,5 +1,5 @@
-<header>
-    <div class="container relative flex items-center justify-between px-5 py-5 mx-auto">
+<header class="fixed top-0 z-50 w-full shadow-2xl bg-neutral-900 shadow-primary/20">
+    <div class="container flex items-center justify-between px-5 py-5 mx-auto ">
         <a href="/">
             <img class="h-20 lg:hidden" src="/assets/images/transparentLogo.png" alt="Ascension Cloud Solutions"/>
             <img class="hidden lg:block h-14" src="/assets/images/transparent_brand.png" alt="Ascension Cloud Solutions"/>
@@ -11,13 +11,24 @@
                 viewbox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                class="w-8 h-8">
+                class="w-8 h-8"
+                id="header-bars">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
             </svg>
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="hidden w-8 h-8"
+                id="header-xmark">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+            </svg>
         </button>
-        <ul class="absolute left-0 z-50 flex-col items-center hidden w-full gap-12 py-20 text-lg font-bold bg-black text-primary
-                navbar-links lg:py-0 rounded-b-3xl lg:w-fit lg:flex-row lg:bg-transparent lg:gap-4 top-full lg:flex lg:relative
-                lg:text-white lg:text-base">
+        <ul class="absolute left-0 z-50 flex flex-col items-center w-full h-0 gap-12 py-0 overflow-hidden text-lg font-bold
+                transition-all duration-300 bg-black text-primary navbar-links lg:py-0 rounded-b-3xl lg:w-fit lg:flex-row
+                lg:bg-transparent lg:gap-4 top-full lg:flex lg:relative lg:text-white lg:text-base lg:h-auto lg:overflow-visible">
             <li>
                 <a href="/" class="transition-opacity hover:opacity-50">Home</a>
             </li>
@@ -34,7 +45,7 @@
                 <a href="/blog" class="transition-opacity hover:opacity-50">Blog</a>
             </li>
             <li>
-                <button class="no-smoothState open-contact" class="transition-opacity hover:opacity-50">Contact</button>
+                <button class="transition-opacity no-smoothState open-contact hover:opacity-50">Contact</button>
             </li>
         </ul>
     </div>
@@ -43,8 +54,13 @@
     const openHeader = () => {
         const nav = document.querySelector('.navbar-links');
         const main = document.querySelector('main');
-        nav.classList.toggle('flex');
-        nav.classList.toggle('hidden');
-        main.classList.toggle('opacity-5')
+        const bars = document.querySelector('header #header-bars');
+        const xmark = document.querySelector('header #header-xmark');
+        nav.classList.toggle('py-0');
+        nav.classList.toggle('py-20');
+        nav.classList.toggle('h-0');
+        main.classList.toggle('opacity-5');
+        bars.classList.toggle('hidden');
+        xmark.classList.toggle('hidden');
     }
 </script>
