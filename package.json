@@ -4,15 +4,15 @@
   "description": "This is a dark theme landing page for client usage",
   "main": "index.js",
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.1",
+    "@11ty/eleventy": "^1.0.2",
     "@tailwindcss/typography": "^0.5.9",
-    "autoprefixer": "^10.4.14",
+    "autoprefixer": "^10.4.15",
     "dotenv": "^16.3.1",
-    "graphql": "^16.7.1",
+    "graphql": "^16.8.0",
     "graphql-request": "^6.1.0",
     "npm-run-all": "^4.1.5",
-    "postcss": "^8.4.24",
-    "tailwindcss": "^3.3.2"
+    "postcss": "^8.4.28",
+    "tailwindcss": "^3.3.3"
   },
   "scripts": {
     "start:tailwind": "npx tailwindcss -i \"./src/css/style.css\" -o \"./src/css/tailwind.css\" -w",
