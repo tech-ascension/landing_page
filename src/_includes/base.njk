@@ -58,11 +58,16 @@
         (p = c.getElementsByTagName(h)[0]),
         (m.async = 1),
         (m.src = i),
-        p.parentNode.insertBefore(m, p);
-      })(
-        document, 'script', 'https://chimpstatic.com/mcjs-connected/js/users/2e33e53404e6e2528bc8e75f5/494e93923ee1e02207a4ecdf9.js',
-      );
+        p
+          .parentNode
+          .insertBefore(m, p);
+      })(document, 'script', 'https://chimpstatic.com/mcjs-connected/js/users/2e33e53404e6e2528bc8e75f5/494e93923ee1e02207a4ecdf9.js',);
     </script>
+    <chat-widget
+  location-id="PThGKz8PAg25cbYJB6Ws"></chat-widget>
+    <script
+  src="https://widgets.leadconnectorhq.com/loader.js" 
+  data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" ></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-202002438-1"></script>
     <script>
@@ -92,13 +97,17 @@
     {% include 'footer.njk' %}
     <script>
       if (window.netlifyIdentity) {
-        window.netlifyIdentity.on('init', (user) => {
-          if (!user) {
-            window.netlifyIdentity.on('login', () => {
-              document.location.href = '/admin/';
-            });
-          }
-        });
+        window
+          .netlifyIdentity
+          .on('init', (user) => {
+            if (!user) {
+              window
+                .netlifyIdentity
+                .on('login', () => {
+                  document.location.href = '/admin/';
+                });
+            }
+          });
       }
     </script>
   </body>
