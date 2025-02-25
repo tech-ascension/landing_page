@@ -172,7 +172,7 @@ On receipt of that notice ('Notice') by that other party, the parties to the Ter
   
 - The Parties are equally liable for the fees and reasonable expenses of a mediator and the cost of the venue of the mediation and without limiting the foregoing undertake to pay any amounts requested by the mediator as a pre-condition to the mediation commencing. The Parties must each pay their own costs associated with the mediation;
   
-- The mediation will be held in 10A Avonlea Street Dapto, New South Wales, Australia.
+- The mediation will be held online or in person within Wollongong NSW.
 
 ### Confidential:
 

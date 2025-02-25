@@ -55,7 +55,7 @@ We reserve the right to refuse to provide you with information that we hold abou
 
 ## Complaints about privacy
 
-If you have any complaints about our privacy practises, please feel free to send in details of your complaints to 10A Avonlea Street, Dapto, New South Wales, 2530 . We take complaints very seriously and will respond shortly after receiving written notice of your complaint.
+If you have any complaints about our privacy practises, please feel free to send in details of your complaints to Parcel Locker 10074 61705 Shop 18 110-114 Crown St Wollongong NSW, Australia. We take complaints very seriously and will respond shortly after receiving written notice of your complaint.
 
 ## Changes to Privacy Policy
 
