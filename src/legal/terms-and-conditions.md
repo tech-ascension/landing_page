@@ -79,7 +79,9 @@ You agree and acknowledge that Ascension Cloud Solutions PTY LTD can vary the Su
 
 ## Refund Policy
 
-Ascension Cloud Solutions PTY LTD will only provide you with a refund of the Subscription Fee in the event they are unable to continue to provide the Services or if the manager of Ascension Cloud Solutions PTY LTD makes a decision, at its absolute discretion, that it is reasonable to do so under the circumstances. Where this occurs, the refund will be in the proportional amount of the Subscription Fee that remains unused by the Member (the 'Refund').
+Ascension Cloud Solutions PTY LTD requires a nonrefundable 50% deposit upfront before commencing any work, unless otherwise disclosed by the manager. This deposit is intended to cover labor costs for the work done, even if no intellectual property (IP) is delivered.
+
+A refund of the Subscription Fee may be provided only if Ascension Cloud Solutions PTY LTD is unable to continue providing the Services or if the manager, at their absolute discretion, determines that it is reasonable to issue a refund under the circumstances. If a refund is granted, it will be proportional to the amount of the Subscription Fee or Deposit that remains unused by the Member (the "Refund").
 
 ## Copyright and Intellectual Property
 
