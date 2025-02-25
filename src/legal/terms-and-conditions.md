@@ -85,21 +85,28 @@ A refund of the Subscription Fee may be provided only if Ascension Cloud Solutio
 
 ## Copyright and Intellectual Property
 
-The Website, the Services and all of the related products of Ascension Cloud Solutions PTY LTD are subject to copyright. The material on the Website is protected by copyright under the laws of Australia and through international treaties. Unless otherwise indicated, all rights (including copyright) in the Services and compilation of the Website (including but not limited to text, graphics, logos, button icons, video images, audio clips, Website, code, scripts, design elements and interactive features) or the Services are owned or controlled for these purposes, and are reserved by Ascension Cloud Solutions PTY LTD or its contributors.
+The Website, the Services, and all related products of Ascension Cloud Solutions PTY LTD are subject to copyright. The material on the Website is protected under Australian copyright law and international treaties. Unless otherwise indicated, all rights—including copyright—in the Services and the compilation of the Website (including but not limited to text, graphics, logos, button icons, video images, audio clips, code, scripts, design elements, and interactive features) are owned or controlled by Ascension Cloud Solutions PTY LTD or its contributors.
 
-All trademarks, service marks and trade names are owned, registered and/or licensed by Ascension Cloud Solutions PTY LTD, who grants to you a worldwide, non-exclusive, royalty-free, revocable license whilst you are a Member to:
+All trademarks, service marks, and trade names are owned, registered, and/or licensed by Ascension Cloud Solutions PTY LTD, which grants you a worldwide, non-exclusive, royalty-free, revocable license while you are a Member to:
 
-use the Website pursuant to the Terms;
-copy and store the Website and the material contained in the Website in your device's cache memory; and
-print pages from the Website for your own personal and non-commercial use.
-Ascension Cloud Solutions PTY LTD does not grant you any other rights whatsoever in relation to the Website or the Services. All other rights are expressly reserved by Ascension Cloud Solutions PTY LTD.
+Use the Website pursuant to the Terms;
+Copy and store the Website and its material in your device’s cache memory; and
+Print pages from the Website for your own personal, non-commercial use.
+Ascension Cloud Solutions PTY LTD does not grant you any other rights in relation to the Website or the Services. All other rights remain expressly reserved.
 
-Ascension Cloud Solutions PTY LTD retains all rights, title and interest in and to the Website and all related Services. Nothing you do on or in relation to the Website will transfer any:
+Intellectual Property Ownership & Transfer
+Ascension Cloud Solutions PTY LTD retains all rights, title, and interest in and to the Website and all related Services until full payment for all Services rendered has been received.
 
-business name, trading name, domain name, trade mark, industrial design, patent, registered design or copyright, or
-a right to use or exploit a business name, trading name, domain name, trade mark or industrial design, or
-a thing, system or process that is the subject of a patent, registered design or copyright (or an adaptation or modification of such a thing, system or process), to you.
-You may not, without the prior written permission of Ascension Cloud Solutions PTY LTD and the permission of any other relevant rights owners: broadcast, republish, up-load to a third party, transmit, post, distribute, show or play in public, adapt or change in any way the Services or third party Services for any purpose, unless otherwise provided by these Terms. This prohibition does not extend to materials on the Website, which are freely available for re-use or are in the public domain.
+Unless explicitly agreed in writing, nothing in your use of the Website or Services shall transfer any:
+
+Business name, trading name, domain name, trademark, industrial design, patent, registered design, or copyright;
+Right to use or exploit any business name, trading name, domain name, trademark, industrial design, or any system, process, or material that is the subject of a patent, registered design, or copyright (including adaptations or modifications thereof).
+If a written agreement provides for the transfer of intellectual property, such transfer shall only take effect once full payment has been received for all Services rendered. Until that point, all work, including modifications and custom developments, remains the exclusive property of Ascension Cloud Solutions PTY LTD.
+
+You may not, without prior written permission from Ascension Cloud Solutions PTY LTD and any other relevant rights owners:
+
+Broadcast, republish, upload to a third party, transmit, post, distribute, publicly display, adapt, or modify any part of the Services or third-party Services for any purpose, unless explicitly permitted by these Terms.
+This prohibition does not extend to materials on the Website that are freely available for reuse or in the public domain.
 
 ## Privacy
 
