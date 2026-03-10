@@ -1,18 +1,18 @@
 [
     {
-        "icon": "fas fa-sync fa-2x",
-        "title": "Synergise"
+        "icon": "fas fa-network-wired fa-2x",
+        "title": "Intelligent Systems"
     },
     {
-        "icon": "fas fa-analytics fa-2x",
-        "title": "Promote Growth"
+        "icon": "fas fa-chart-line fa-2x",
+        "title": "Data-Driven Growth"
     },
     {
-        "icon": "fas fa-database fa-2x",
-        "title": "Scalability"
+        "icon": "fas fa-expand-arrows-alt fa-2x",
+        "title": "Scalable AI"
     },
     {
-        "icon": "fas fa-cloud-upload fa-2x",
-        "title": "Ascend"
+        "icon": "fas fa-rocket fa-2x",
+        "title": "Accelerate"
     }
 ]

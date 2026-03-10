@@ -1,16 +1,10 @@
-<div class="flex flex-col gap-2 rounded-xl lg:flex-row lg:col-span-3 h-fit lg:grid lg:grid-cols-2">
-    <a href="/blog/{{ post.slug }}" class="h-full lg:w-full">
-        <img src="{{ post.coverImage.url }}" alt="{{ post.imageAlt }}" class="object-cover w-full h-full transition-transform aspect-video rounded-xl hover:rotate-2">
-    </a>
-    <div class="lg:p-8">
-        <a href="/blog/{{ post.slug }}">
-            <p class="text-sm">{{ post.author.name }} | {{ post.date | postDate }}</p>
-        </a>
-        <a href="/blog/{{ post.slug }}">
-            <h3 class="text-2xl font-bold">{{ post.title }}</h3>
-        </a>
-        <a href="/blog/{{ post.slug }}">
-            <p class="hidden mt-4 lg:block">{{ post.content.text | removeEscapes | makeExcerpt }}</p>
-        </a>
+<a href="/blog/{{ post.slug }}" class="relative block overflow-hidden group rounded-2xl lg:col-span-3 aspect-[16/10] lg:aspect-[21/9]">
+    <img src="{{ post.coverImage.url }}" alt="{{ post.imageAlt }}" class="object-cover w-full h-full transition-transform duration-500 group-hover:scale-105">
+    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent">
+        <div class="absolute bottom-0 left-0 right-0 p-6 md:p-8">
+            <p class="text-sm text-white/60">{{ post.author.name }} | {{ post.date | postDate }}</p>
+            <h3 class="mt-1 text-2xl font-bold text-white md:text-3xl">{{ post.title }}</h3>
+            <p class="hidden mt-2 text-white/50 lg:block lg:max-w-2xl line-clamp-2">{{ post.content.text | removeEscapes | makeExcerpt }}</p>
+        </div>
     </div>
-</div>
+</a>

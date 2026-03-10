@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <!-- Left leg - crimson swoosh, thick and curved like original leaf shape -->
+  <path d="
+    M50 6
+    C44 18, 30 42, 22 64
+    C18 76, 14 88, 18 93
+    C22 98, 30 96, 34 88
+    C38 78, 42 64, 46 52
+    C44 40, 46 24, 50 6
+    Z
+  " fill="#DC143C"/>
+  <!-- Right leg - off-white swoosh, mirrored curve -->
+  <path d="
+    M50 6
+    C56 18, 70 42, 78 64
+    C82 76, 86 88, 82 93
+    C78 98, 70 96, 66 88
+    C62 78, 58 64, 54 52
+    C56 40, 54 24, 50 6
+    Z
+  " fill="#F5F5F5"/>
+  <!-- Crossbar - left half crimson, uses a rounded pill shape -->
+  <path d="
+    M30 60
+    C30 56, 33 54, 37 54
+    L50 54
+    L50 66
+    L37 66
+    C33 66, 30 64, 30 60
+    Z
+  " fill="#DC143C"/>
+  <!-- Crossbar - right half off-white, rounded pill shape -->
+  <path d="
+    M50 54
+    L63 54
+    C67 54, 70 56, 70 60
+    C70 64, 67 66, 63 66
+    L50 66
+    Z
+  " fill="#F5F5F5"/>
+</svg>
