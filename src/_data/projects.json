@@ -70,6 +70,20 @@
         "client": "Whitehall Group UK",
         "title": "Enterprise Digital Transformation",
         "description": "Technical consultant for backend integrations that were required across a variety of Whitehall's internal .NET infrastructure.",
-        "thumbnail": "/assets/images/reviewers/whitehall-group-uk-richard.png"
+        "thumbnail": "/assets/images/reviewers/wh.png"
+    },
+    {
+        "slug": "propic",
+        "client": "Propic",
+        "title": "AI Insights for Real Estate",
+        "description": "Developed machine learning models that deliver AI-driven insights for lead generation, empowering real estate agencies, prospects, and brokers with predictive intelligence.",
+        "thumbnail": "/assets/images/reviewers/propic.png"
+    },
+    {
+        "slug": "azility",
+        "client": "Azility",
+        "title": "Business Intelligence & Energy Analytics",
+        "description": "Built data warehousing and machine learning pipelines powering reporting dashboards for cost and consumption analytics of energy across council sites.",
+        "thumbnail": "/assets/images/reviewers/azility.png"
     }
 ]

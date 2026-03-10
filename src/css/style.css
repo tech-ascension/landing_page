@@ -266,6 +266,45 @@
   transform: translateY(0);
 }
 
+/* =========================================================
+   PAGE TRANSITION — Linear wipe between pages
+   ========================================================= */
+
+.page-transition {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: #000;
+  pointer-events: none;
+  clip-path: inset(0 0 0 100%);
+}
+
+.page-transition.wipe-in {
+  animation: page-wipe-in 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.page-transition.wipe-out {
+  animation: page-wipe-out 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes page-wipe-in {
+  0% {
+    clip-path: inset(0 0 0 100%);
+  }
+  100% {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+@keyframes page-wipe-out {
+  0% {
+    clip-path: inset(0 0 0 0);
+  }
+  100% {
+    clip-path: inset(0 0 0 100%);
+  }
+}
+
 /* Portfolio card hover effects */
 .portfolio-card {
   transition:
