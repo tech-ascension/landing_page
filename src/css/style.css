@@ -5,3 +5,278 @@
 .text-balance {
   text-wrap: balance;
 }
+
+/* =========================================================
+   HERO LOADER — Red pencil drawing across black background
+   100% CSS, renders immediately with no JS dependency
+   ========================================================= */
+
+.hero-loader {
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-loader.is-wiping {
+  animation: loader-wipe 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes loader-wipe {
+  0% {
+    clip-path: inset(0 0 0 0);
+  }
+  100% {
+    clip-path: inset(0 0 0 100%);
+  }
+}
+
+.hero-loader.is-hidden {
+  visibility: hidden;
+  pointer-events: none;
+}
+
+/* Pencil scene container */
+.pencil-scene {
+  position: relative;
+  width: 300px;
+  height: 80px;
+}
+
+/* SVG signature path */
+.signature-svg {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  filter: drop-shadow(0 0 6px rgba(220, 20, 60, 0.5));
+}
+
+.signature-path {
+  stroke-dasharray: 520;
+  stroke-dashoffset: 520;
+  animation: draw-signature 2.2s cubic-bezier(0.45, 0, 0.15, 1) infinite;
+}
+
+@keyframes draw-signature {
+  0% {
+    stroke-dashoffset: 520;
+    opacity: 1;
+  }
+  70% {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+  85% {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    opacity: 0;
+  }
+}
+
+/* The pencil follows the SVG curve via offset-path */
+.pencil {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  offset-path: path('M10,40 C30,40 35,10 55,15 C75,20 60,60 80,55 C100,50 95,15 115,20 C135,25 120,65 145,50 C170,35 155,10 180,25 C205,40 185,65 210,45 C235,25 225,15 250,30 C265,40 270,42 290,40');
+  offset-rotate: auto;
+  offset-distance: 0%;
+  animation: follow-signature 2.2s cubic-bezier(0.45, 0, 0.15, 1) infinite;
+}
+
+@keyframes follow-signature {
+  0% {
+    offset-distance: 0%;
+    opacity: 1;
+  }
+  70% {
+    offset-distance: 100%;
+    opacity: 1;
+  }
+  85% {
+    offset-distance: 100%;
+    opacity: 1;
+  }
+  100% {
+    offset-distance: 100%;
+    opacity: 0;
+  }
+}
+
+.pencil-body {
+  width: 36px;
+  height: 7px;
+  background: linear-gradient(
+    to bottom,
+    #B22222 0%,
+    #DC143C 30%,
+    #DC143C 70%,
+    #8B0000 100%
+  );
+  border-radius: 2px 0 0 2px;
+  position: relative;
+  /* Offset so the tip leads */
+  transform: translateX(-38px) translateY(-3.5px);
+}
+
+/* Metallic band */
+.pencil-body::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 7px;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    #C0C0C0 0%,
+    #808080 50%,
+    #C0C0C0 100%
+  );
+}
+
+.pencil-tip {
+  position: absolute;
+  right: -7px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 3.5px solid transparent;
+  border-bottom: 3.5px solid transparent;
+  border-left: 7px solid #F5DEB3;
+}
+
+/* Graphite/ink tip */
+.pencil-tip::after {
+  content: '';
+  position: absolute;
+  right: -3px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 1.5px solid transparent;
+  border-bottom: 1.5px solid transparent;
+  border-left: 3px solid #DC143C;
+}
+
+/* =========================================================
+   HERO VIDEO — Always visible underneath the loader
+   ========================================================= */
+
+.hero-video-wrap {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  overflow: hidden;
+}
+
+/* Hero text fades in after video expands */
+.hero-text-reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: none;
+}
+
+.hero-loaded .hero-text-reveal {
+  animation: text-fade-in 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  animation-delay: inherit;
+}
+
+@keyframes text-fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =========================================================
+   HERO OVERLAY
+   ========================================================= */
+
+.hero-overlay {
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.3) 0%,
+    rgba(0, 0, 0, 0.5) 50%,
+    rgba(0, 0, 0, 0.75) 100%
+  );
+}
+
+/* =========================================================
+   SCROLL INDICATOR
+   ========================================================= */
+
+.scroll-indicator {
+  animation: bounce 2s cubic-bezier(0.28, 0.84, 0.42, 1) infinite;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.scroll-indicator:hover {
+  opacity: 0.7;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-16px);
+  }
+}
+
+/* Override bounce until hero is loaded */
+.hero-text-reveal.scroll-indicator {
+  animation: none;
+}
+
+.hero-loaded .hero-text-reveal.scroll-indicator {
+  animation: text-fade-in 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards,
+             bounce 2s cubic-bezier(0.28, 0.84, 0.42, 1) 1.2s infinite;
+}
+
+/* =========================================================
+   SCROLL REVEAL — Cards & sections
+   ========================================================= */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition:
+    opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Portfolio card hover effects */
+.portfolio-card {
+  transition:
+    transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+    opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.portfolio-card:hover {
+  transform: translateY(-6px);
+}
+
+.portfolio-card.is-visible:hover {
+  transform: translateY(-6px);
+}

@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 60" width="420" height="60">
+  <!-- Left leg - crimson swoosh -->
+  <path d="
+    M22 2
+    C19 8, 14 22, 10 34
+    C8 40, 6 48, 8 51
+    C10 54, 14 53, 16 49
+    C18 43, 20 34, 22 28
+    C21 22, 22 12, 22 2
+    Z
+  " fill="#DC143C"/>
+  <!-- Right leg - off-white swoosh -->
+  <path d="
+    M22 2
+    C25 8, 30 22, 34 34
+    C36 40, 38 48, 36 51
+    C34 54, 30 53, 28 49
+    C26 43, 24 34, 22 28
+    C23 22, 22 12, 22 2
+    Z
+  " fill="#F5F5F5"/>
+  <!-- Crossbar left - crimson -->
+  <path d="
+    M12 33
+    C12 31, 13 30, 15 30
+    L22 30
+    L22 36
+    L15 36
+    C13 36, 12 35, 12 33
+    Z
+  " fill="#DC143C"/>
+  <!-- Crossbar right - off-white -->
+  <path d="
+    M22 30
+    L29 30
+    C31 30, 32 31, 32 33
+    C32 35, 31 36, 29 36
+    L22 36
+    Z
+  " fill="#F5F5F5"/>
+  <!-- Company name - off-white -->
+  <text x="48" y="28" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="600" fill="#F5F5F5" letter-spacing="0.5">Ascension Cloud Solutions</text>
+  <!-- Tagline - muted -->
+  <text x="48" y="46" font-family="Inter, system-ui, sans-serif" font-size="10" font-weight="400" fill="#9CA3AF" letter-spacing="1">Solid execution cannot exist without a clear vision</text>
+</svg>

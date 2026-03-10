@@ -1,0 +1,75 @@
+[
+    {
+        "slug": "shopomation",
+        "client": "Shopomation",
+        "title": "AI-Powered E-Commerce Automation",
+        "description": "Engineered an intelligent automation platform that streamlines product listing, inventory management, and order fulfilment using machine learning pipelines.",
+        "thumbnail": "/assets/images/reviewers/shopomation.png"
+    },
+    {
+        "slug": "new-world",
+        "client": "New World",
+        "title": "New Zeland's Premium Full-Service Grocery Store",
+        "description": "Reworked the entire New World loyalty program to integrate with their latest offering called Club Plus",
+        "thumbnail": "/assets/images/reviewers/new-world.png"
+    },
+    {
+        "slug": "pak-n-save",
+        "client": "PAK'nSAVE",
+        "title": "Cybersecurity & Rewards Programme",
+        "description": "Reviewed and implemented a more robust user authentication method that focuses on the latest compliance standards",
+        "thumbnail": "/assets/images/reviewers/Paknsave.svg",
+        "contain": true
+    },
+    {
+        "slug": "four-square",
+        "client": "Four Square",
+        "title": "New Zeland's Convenience Around the Corner",
+        "description": "Managed operations preventing regression issues into their rebranding pipeline for their latest offerings",
+        "thumbnail": "/assets/images/reviewers/4sq.png"
+    },
+    {
+        "slug": "foodstuffs-nz",
+        "client": "Foodstuffs NZ",
+        "title": "Enterprise AI Platform",
+        "description": "Architected a unified data and AI platform serving multiple retail brands, enabling real-time decision-making across procurement, logistics, and merchandising.",
+        "thumbnail": "/assets/images/reviewers/foodstuffsnz.svg",
+        "contain": true
+    },
+    {
+        "slug": "equ",
+        "client": "equ (formerly Equalution)",
+        "title": "ML-Driven Nutrition Intelligence",
+        "description": "Developed machine learning algorithms that personalise meal plans and nutritional guidance at scale, transforming how users approach health and fitness.",
+        "thumbnail": "/assets/images/reviewers/amal-equ.png",
+        "containZoom": true
+    },
+    {
+        "slug": "les-howard-studios",
+        "client": "Les Howard Studios",
+        "title": "Creative Production Automation",
+        "description": "Implemented AI-assisted workflows for content production, automating post-processing, asset management, and delivery pipelines for a leading creative studio.",
+        "thumbnail": "/assets/images/reviewers/leshowardstudios.jpg"
+    },
+    {
+        "slug": "good-to-go",
+        "client": "Good To Go Mobile Roadworthys",
+        "title": "AI-Powered Landing Page Pipeline",
+        "description": "Built a landing page that integrated with the latest in online machine learning analytics for lead generation and scheduling integrations with High Level to integrate with social media channels",
+        "thumbnail": "/assets/images/reviewers/gtgmr.png"
+    },
+    {
+        "slug": "bigboibets",
+        "client": "BigBoiBets",
+        "title": "Former Co-Founder",
+        "description": "Technical Co-Founder behind Runescape's largest online poker platform for both cryptocurrency and currencies across other MMOs.",
+        "thumbnail": "/assets/images/reviewers/bbb.png"
+    },
+    {
+        "slug": "whitehall-group-uk",
+        "client": "Whitehall Group UK",
+        "title": "Enterprise Digital Transformation",
+        "description": "Technical consultant for backend integrations that were required across a variety of Whitehall's internal .NET infrastructure.",
+        "thumbnail": "/assets/images/reviewers/whitehall-group-uk-richard.png"
+    }
+]

@@ -16,7 +16,7 @@
 }
 
 .the-form .input:before {
-  background: #afe4f6;
+  background: #FF4D6A;
   transition-delay: 0.1s;
   z-index: 10;
 }
@@ -32,7 +32,7 @@
 }
 
 .the-form .input:after {
-  background: #bae27d;
+  background: #DC143C;
   z-index: 9;
 }
 
@@ -110,7 +110,7 @@
   transition-delay: 0.2s;
   -webkit-transform: translateY(-100%);
   transform: translateY(-100%);
-  background-color: #bae27d;
+  background-color: #DC143C;
   transition: opacity 0.3s, -webkit-transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1);
   transition: transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1), opacity 0.3s;
   transition: transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1), opacity 0.3s,
@@ -123,7 +123,7 @@
 .about-contact .half-contact.is-about .giga-text {
   top: -10px;
   left: 100px;
-  color: #4a4a4a;
+  color: #000000;
 }
 .about-contact .half-contact.is-contact {
   -webkit-transform: translateY(100%);
@@ -196,7 +196,7 @@
   transition: all 0.4s cubic-bezier(0.694, 0.048, 0.335, 1);
 }
 .close-contact span:before {
-  background-color: #bae27d;
+  background-color: #DC143C;
   transition: all 0.3s ease;
 }
 .close-contact span:after,
@@ -252,10 +252,10 @@
 .about-me-text {
   margin-top: 20px;
   font-size: 0.875em;
-  color: #4a4a4a;
+  color: #000000;
 }
 .about-me-text strong {
-  color: #bae27d;
+  color: #DC143C;
 }
 .about-me-list {
   margin: 0;

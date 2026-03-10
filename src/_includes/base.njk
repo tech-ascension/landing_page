@@ -6,28 +6,20 @@
       name="viewport"
       content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height,
         target-densitydpi=device-dpi"/>
-    <meta name="description" content="Ascension Cloud Solutions: Offering bespoke business ascension solutions to propel your venture forward. Let's help you ascend past your competition!"/>
+    <meta name="description" content="Ascension Cloud Solutions: AI-powered systems, intelligent automation, and machine learning solutions that transform how businesses operate."/>
     <meta name="twitter:card" content="summary"/>
     <meta name="twitter:site" content="@ascensionvision"/>
     <meta name="twitter:creator" content="@ConnerGoldberg"/>
     <meta name="twitter:title" content="Ascension Cloud Solutions"/>
     <meta
       name="twitter:description"
-      content="Ascension Cloud Solutions is a software consultancy agency dedicated to delivering premium technological
-        solutions for a wide range of business use cases. Our software is dedicated to supporting your business, and we are
-        dedicated to supporting you within your venture. Our experts will be able to design efficient and robust systems that can
-        integrate to external or pre-existing systems within your project. We help you understand your vision from a
-        technological perspective and help you execute upon it accordingly."/>
+      content="Ascension Cloud Solutions integrates AI systems, automation, and machine learning at the forefront of solving complex business problems. We design intelligent systems that scale."/>
     <meta name="twitter:image" content="http://ascensioncloudsolutions.com/"/>
     <meta name="og:url" content="Ascension Cloud Solutions"/>
     <meta name="og:title" content="Ascension Cloud Solutions"/>
     <meta
       name="og:description"
-      content="Ascension Cloud Solutions is a software consultancy agency dedicated to delivering premium technological
-        solutions for a wide range of business use cases. Our software is dedicated to supporting your business, and we are
-        dedicated to supporting you within your venture. Our experts will be able to design efficient and robust systems that can
-        integrate to external or pre-existing systems within your project. We help you understand your vision from a
-        technological perspective and help you execute upon it accordingly."/>
+      content="Ascension Cloud Solutions integrates AI systems, automation, and machine learning at the forefront of solving complex business problems. We design intelligent systems that scale."/>
     <meta name="og:image" content="https://ascensioncloudsolutions.com/assets/images/transparent_brand.png"/>
     <meta name="og:image:alt" content="Website brand logo"/>
     <link rel="apple-touch-icon" sizes="120x120" href="/assets/fav/apple-touch-icon.png"/>
@@ -37,8 +29,11 @@
     <link rel="shortcut icon" href="/assets/fav/favicon.ico" type="image/x-icon">
     <link rel="mask-icon" href="/assets/fav/safari-pinned-tab.svg" color="#5bbad5"/>
     <meta name="msapplication-TileColor" content="#da532c"/>
-    <meta name="theme-color" content="#ffffff"/>
+    <meta name="theme-color" content="#000000"/>
     <link rel="canonical" href="https://ascensioncloudsolutions.com"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/application.css">
     <link rel="stylesheet" href="/css/tailwind.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
@@ -56,11 +51,6 @@
           .insertBefore(m, p);
       })(document, 'script', 'https://chimpstatic.com/mcjs-connected/js/users/2e33e53404e6e2528bc8e75f5/494e93923ee1e02207a4ecdf9.js',);
     </script>
-    <!-- <chat-widget
-  location-id="PThGKz8PAg25cbYJB6Ws"></chat-widget>
-    <script
-  src="https://widgets.leadconnectorhq.com/loader.js" 
-  data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" ></script> -->
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-202002438-1"></script>
     <script>
@@ -71,7 +61,6 @@
       gtag('js', new Date());
       gtag('config', 'UA-202002438-1');
     </script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto"/>
     <link
       rel="stylesheet"
       href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
@@ -81,9 +70,9 @@
       {{ title }}
     </title>
   </head>
-  <body class="flex flex-col min-h-screen text-white transition-opacity duration-300 bg-neutral-900">
+  <body class="flex flex-col min-h-screen bg-black text-foreground font-body">
     {% include 'header.njk' %}
-    <main class="flex-1 pt-28">
+    <main class="flex-1">
       {{ content | safe }}
     </main>
     {% include 'about-contact-card.njk' %}
@@ -102,6 +91,86 @@
             }
           });
       }
+    </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        // Snap-scroll on arrow click
+        var scrollBtn = document.getElementById('scroll-down-btn');
+        if (scrollBtn) {
+          scrollBtn.addEventListener('click', function () {
+            var target = document.getElementById('portfolio');
+            if (target) {
+              target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+          });
+        }
+
+        // === Hero video load → wipe loader to reveal video ===
+        console.time('hero-total');
+        console.time('hero-video-ready');
+        var video = document.getElementById('hero-video');
+        var loader = document.getElementById('hero-loader');
+        var hero = document.getElementById('hero');
+
+        console.log('[hero] DOMContentLoaded, video.readyState:', video ? video.readyState : 'N/A');
+
+        function startHeroTransition() {
+          if (hero.classList.contains('hero-loaded') || loader.classList.contains('is-wiping')) return;
+          console.timeEnd('hero-video-ready');
+          console.time('hero-wipe');
+          console.log('[hero] Starting wipe transition');
+          loader.classList.add('is-wiping');
+          loader.addEventListener('animationend', function () {
+            loader.classList.add('is-hidden');
+            hero.classList.add('hero-loaded');
+            console.timeEnd('hero-wipe');
+            console.timeEnd('hero-total');
+          }, { once: true });
+        }
+
+        if (video) {
+          // Use 'playing' event — guarantees video has actually started rendering
+          if (video.readyState >= 4 && !video.paused) {
+            console.log('[hero] Video already playing at DOMContentLoaded');
+            startHeroTransition();
+          } else {
+            console.log('[hero] Waiting for video to start playing...');
+            video.addEventListener('playing', function () {
+              console.log('[hero] Video "playing" event fired');
+              startHeroTransition();
+            }, { once: true });
+          }
+          // Safety fallback — don't leave loader forever
+          setTimeout(function () {
+            console.log('[hero] Safety fallback triggered');
+            startHeroTransition();
+          }, 6000);
+        }
+
+        // Scroll-reveal with IntersectionObserver
+        var reveals = document.querySelectorAll('.reveal');
+        if (reveals.length && 'IntersectionObserver' in window) {
+          var observer = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+                observer.unobserve(entry.target);
+              }
+            });
+          }, {
+            threshold: 0.1,
+            rootMargin: '0px 0px -40px 0px'
+          });
+          reveals.forEach(function (el) {
+            observer.observe(el);
+          });
+        } else {
+          // Fallback: show everything
+          reveals.forEach(function (el) {
+            el.classList.add('is-visible');
+          });
+        }
+      });
     </script>
   </body>
 </html>

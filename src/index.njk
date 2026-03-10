@@ -1,130 +1,218 @@
 ---
-title: Ascension Cloud Solutions | Software Architects
+title: Ascension Cloud Solutions | AI Systems & Intelligent Automation
 layout: 'base.njk'
 ---
 
-<section>
-  <div class="container relative flex flex-col items-center px-5 py-24 mx-auto overflow-hidden text-center lg:pt-36 lg:pb-44">
-    <img src="/assets/images/footer-phone.png" alt="" class="absolute right-0 h-full -bottom-1/2 opacity-30">
-      <h1 class="z-10 text-4xl font-black text-primary lg:text-6xl text-balance">Ascend to the next level of business</h1>
-      <p class="z-10 max-w-5xl mt-4 lg:text-xl">
-        We focus on providing the best level of service for people first. Our UX-design solutions are developed according to
-        your business requirements and bring you as close to your customers as possible. Why wait? Book your FREE 1-hour
-        consultation with us today!
-      </p>
-      <button
-        class="z-10 px-6 py-2 mt-8 font-bold text-black uppercase transition-opacity rounded-full bg-primary lg:text-xl
-          open-contact hover:opacity-70"
-        type="submit">
-        Enquire now</button>
-    </div>
-  </section>
-  <section class="mb-10 shadow-2xl bg-neutral-800 shadow-primary/20">
-    <div class="container px-5 py-5 mx-auto lg:py-10">
-      <h2 class="text-3xl font-bold text-center text-primary md:text-4xl lg:text-5xl">Make your vision a reality...</h2>
-      <form
-        class="flex flex-col justify-center gap-4 mt-8 md:flex-row lg:gap-0"
-        action="https://ascensioncloudsolutions.us1.list-manage.com/subscribe/post?u=2e33e53404e6e2528bc8e75f5&amp;id=82deab1b99"
-        method="post"
-        id="mc-embedded-subscribe-form"
-        name="mc-embedded-subscribe-form"
-        target="_blank"
-        novalidate>
-        <input
-          class="px-4 py-2 rounded-full"
-          type="email"
-          style="margin-right: 1%"
-          value=""
-          name="EMAIL"
-          id="mce-EMAIL"
-          placeholder="Enter your email..."
-          required/>
-        <input
-          type="submit"
-          value="Subscribe"
-          name="subscribe"
-          id="mc-embedded-subscribe"
-          class="px-6 py-2 font-bold text-black uppercase transition-opacity rounded-full cursor-pointer bg-primary
-            hover:opacity-70"/>
-      </form>
-    </div>
-  </section>
-  <section class="pt-10" id="services">
-    <div class="container px-5 py-5 mx-auto lg:py-10">
-      <h2 class="text-3xl font-bold text-center text-primary md:text-4xl lg:text-5xl">Our services</h2>
-      <div class="grid justify-center gap-8 mt-16 lg:grid-cols-3 ">
-        {% for i in range(0, 3) %}
-          <div class="max-w-xl p-4 transition-colors duration-300 rounded-lg hover:bg-neutral-800 h-fit">
-            <i class="{{ services[i].icon }} text-primary/50"></i>
-            <h3 class="mt-4 text-2xl font-bold text-primary">{{ services[i].title }}</h3>
-            <p class="mt-4 text-justify">{{ services[i].description }}</p>
-          </div>
-        {% endfor %}
+{# ===== HERO SECTION ===== #}
+<section class="relative flex items-center justify-center w-full h-screen overflow-hidden bg-black" id="hero">
+  {# --- Pencil-draw loader (pure CSS, renders instantly) --- #}
+  <div class="hero-loader" id="hero-loader">
+    <div class="pencil-scene">
+      <svg class="signature-svg" viewBox="0 0 300 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          class="signature-path"
+          d="M10,40 C30,40 35,10 55,15 C75,20 60,60 80,55 C100,50 95,15 115,20 C135,25 120,65 145,50 C170,35 155,10 180,25 C205,40 185,65 210,45 C235,25 225,15 250,30 C265,40 270,42 290,40"
+          stroke="url(#pencil-gradient)"
+          stroke-width="2.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"/>
+        <defs>
+          <linearGradient id="pencil-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#DC143C"/>
+            <stop offset="100%" stop-color="#FF4D6A"/>
+          </linearGradient>
+        </defs>
+      </svg>
+      <div class="pencil">
+        <div class="pencil-body">
+          <div class="pencil-tip"></div>
+        </div>
       </div>
     </div>
-  </section>
-  <section class="px-5 my-16">
-    <div class="container flex flex-col items-center justify-between max-w-5xl gap-8 px-5 py-5 mx-auto text-center text-black
-        bg-primary rounded-xl lg:flex-row ">
-      <h2 class="font-bold">Book your free 1-hour consultation and get one step closer to making your vision a reality!</h2>
-      <button class="px-6 py-2 font-bold uppercase transition-opacity bg-black rounded-full text-primary whitespace-nowrap open-contact
-          hover:opacity-80">
-        Get started</button>
-    </div>
-  </section>
-  <section id="about">
-    <div class="container px-5 py-10 mx-auto lg:py-20">
-      <h2 class="text-3xl font-bold text-center text-primary md:text-4xl lg:text-5xl">About us</h2>
-      <p class="max-w-5xl mx-auto mt-8">
-        Ascension Cloud Solutions is a tech consulting agency based in Wollongong. We work with experts in a wide range of
-        technologies and practices in order to provide businesses a holistic approach that ensures a stable design, execution,
-        and integration when implementing software for your business. From e-commerce websites to enterprise level social
-        networks, we are the one-stop-shop to ensure you get the outcome you desire.
-      </p>
-    </div>
-  </section>
-  <section class="pt-10">
-    <div class="container px-5 py-5 mx-auto lg:py-10">
-      <h2 class="text-3xl font-bold text-center text-primary md:text-4xl lg:text-5xl">Branding & Responsive Websites
-      </h2>
-      <div class="grid justify-center gap-8 mt-16 lg:grid-cols-3">
-        {% for i in range(3, 6) %}
-          <div class="max-w-xl p-4 transition-colors duration-300 rounded-lg hover:bg-neutral-800 h-fit">
-            <i class="{{ services[i].icon }} text-primary/50"></i>
-            <h3 class="mt-4 text-2xl font-bold text-primary">{{ services[i].title }}</h3>
-            <p class="mt-4 text-justify">{{ services[i].description }}</p>
+  </div>
+
+  {# --- Video wrapper (starts at 80% width, expands to 100%) --- #}
+  <div class="hero-video-wrap" id="hero-video-wrap">
+    <video
+      class="absolute inset-0 object-cover w-full h-full"
+      id="hero-video"
+      autoplay
+      muted
+      loop
+      playsinline>
+      <source src="/assets/videos/hero.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <div class="absolute inset-0 hero-overlay" style="z-index: 2;"></div>
+  <div class="relative flex flex-col items-center px-5 text-center" style="z-index: 3;">
+    <h1 class="max-w-3xl text-3xl font-medium leading-tight text-white font-display md:text-5xl lg:text-6xl hero-text-reveal">
+      Intelligence that drives business forward
+    </h1>
+    <p class="max-w-xl mt-6 text-base text-white/70 font-body md:text-lg hero-text-reveal" style="animation-delay: 0.15s;">
+      We integrate data driven AI systems, automation, and machine learning to solve your most complex business challenges.
+    </p>
+     <p class="max-w-xl mt-6 text-base text-white/70 font-body md:text-lg hero-text-reveal" style="animation-delay: 0.15s;">
+      Mobile Apps | Websites | Content Creation | Digital Marketing
+    </p>
+    <button class="mt-8 px-8 py-3 text-sm font-semibold tracking-wider uppercase transition-all rounded-full open-contact bg-primary text-black hover:bg-primary/80 hero-text-reveal" style="animation-delay: 0.25s;">
+      Enquire Now
+    </button>
+  </div>
+  <button class="absolute scroll-indicator bottom-10 hero-text-reveal" style="z-index: 3; animation-delay: 0.3s;" id="scroll-down-btn" aria-label="Scroll to portfolio">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-10 h-10">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3"/>
+    </svg>
+  </button>
+</section>
+
+{# ===== PORTFOLIO SECTION ===== #}
+<section id="portfolio" class="py-20 lg:py-32">
+  <div class="container px-5 mx-auto" style="max-width: 1280px;">
+    <h2 class="text-3xl font-semibold text-center font-display text-foreground md:text-4xl lg:text-5xl">
+      Our Work
+    </h2>
+    <p class="max-w-2xl mx-auto mt-4 text-center text-muted-foreground">
+      Delivering AI-powered solutions across retail, health, logistics, and digital transformation.
+    </p>
+    <div class="grid gap-8 mt-16 md:grid-cols-2 lg:grid-cols-3">
+      {% for project in projects %}
+        <a href="#" class="relative block overflow-hidden transition-all duration-300 group portfolio-card reveal aspect-[16/10] rounded-2xl" style="transition-delay: {{ loop.index0 % 3 * 120 }}ms;">
+          <img
+            src="{{ project.thumbnail }}"
+            alt="{{ project.title }}"
+            class="{% if project.contain %}object-contain pb-[30%]{% else %}object-cover{% endif %} w-full h-full transition-transform duration-500 group-hover:scale-105"
+            loading="lazy"/>
+          <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent">
+            <div class="absolute bottom-0 left-0 right-0 p-6">
+              <span class="text-sm text-white/60">{{ project.client }}</span>
+              <h3 class="mt-1 text-lg font-semibold text-white font-body">{{ project.title }}</h3>
+              <p class="mt-1 text-sm text-white/50 line-clamp-2">{{ project.description }}</p>
+            </div>
           </div>
-        {% endfor %}
-      </div>
+        </a>
+      {% endfor %}
     </div>
-  </section>
-  <section class="px-5 my-16 ">
-    <div class="container flex flex-col items-center justify-between max-w-5xl gap-8 px-5 py-5 mx-auto text-center text-black
-        bg-primary rounded-xl lg:flex-row ">
-      <h2 class="font-bold">Book your free 1-hour consultation and get one step closer to making your vision a reality!</h2>
-      <button class="px-6 py-2 font-bold uppercase transition-opacity bg-black rounded-full text-primary whitespace-nowrap open-contact
-          hover:opacity-80">
-        Get started</button>
+  </div>
+</section>
+
+{# ===== NEWSLETTER SECTION ===== #}
+<section class="shadow-2xl bg-muted shadow-primary/10">
+  <div class="container px-5 py-8 mx-auto lg:py-12">
+    <h2 class="text-3xl font-semibold text-center font-display text-primary md:text-4xl">Make your vision a reality</h2>
+    <form
+      class="flex flex-col justify-center gap-4 mt-8 md:flex-row lg:gap-0"
+      action="https://ascensioncloudsolutions.us1.list-manage.com/subscribe/post?u=2e33e53404e6e2528bc8e75f5&amp;id=82deab1b99"
+      method="post"
+      id="mc-embedded-subscribe-form"
+      name="mc-embedded-subscribe-form"
+      target="_blank"
+      novalidate>
+      <input
+        class="px-5 py-3 text-foreground bg-black border rounded-full border-border focus:border-primary focus:outline-none"
+        type="email"
+        style="margin-right: 1%"
+        value=""
+        name="EMAIL"
+        id="mce-EMAIL"
+        placeholder="Enter your email..."
+        required/>
+      <input
+        type="submit"
+        value="Subscribe"
+        name="subscribe"
+        id="mc-embedded-subscribe"
+        class="px-6 py-3 font-semibold text-black uppercase transition-opacity rounded-full cursor-pointer bg-primary
+          hover:opacity-80"/>
+    </form>
+  </div>
+</section>
+
+{# ===== SERVICES SECTION ===== #}
+<section class="pt-20" id="services">
+  <div class="container px-5 py-10 mx-auto lg:py-16">
+    <h2 class="text-3xl font-semibold text-center font-display text-primary md:text-4xl lg:text-5xl">Our Services</h2>
+    <div class="grid justify-center gap-8 mt-16 lg:grid-cols-3">
+      {% for i in range(0, 3) %}
+        <div class="max-w-xl p-6 transition-colors duration-300 rounded-xl hover:bg-muted h-fit">
+          <i class="{{ services[i].icon }} text-primary/60"></i>
+          <h3 class="mt-4 text-xl font-semibold text-primary font-body">{{ services[i].title }}</h3>
+          <p class="mt-4 leading-relaxed text-muted-foreground">{{ services[i].description }}</p>
+        </div>
+      {% endfor %}
     </div>
-  </section>
-  <section id="vision">
-    <div class="container px-5 py-10 mx-auto lg:py-20">
-      <h2 class="text-3xl font-bold text-center text-primary md:text-4xl lg:text-5xl">Our vision</h2>
-      <p class="max-w-5xl mx-auto mt-8">
-        Like our mission says...We are all about bringing your vision to life and executing a precision based approach to your
-        design and implementation. Why risk tens of thousands of dollars by investing in an idea without a dedicated expert in
-        the field to help you navigate the waters and identify hidden costs for your business? You and other businesses aren't
-        alone. Our vision is about bringing businesses together so that we can facilitate synergy, growth, and streamline
-        business processes.
-      </p>
-      <div class="grid max-w-5xl grid-cols-2 gap-8 mx-auto mt-10 lg:grid-cols-4 lg:mt-20">
-        {% for v in vision %}
-          <div class="flex flex-col p-8 overflow-hidden text-center text-black transition-all duration-300 rounded-lg cursor-pointer
-              open-contact bg-neutral-300 hover:bg-white group hover:shadow-xl hover:shadow-white/40">
-            <i class="{{ v.icon }}"></i>
-            <h3 class="mt-4 text-xl">{{ v.title }}</h3>
-          </div>
-        {% endfor %}
-      </div>
+  </div>
+</section>
+
+{# ===== CTA SECTION ===== #}
+<section class="px-5 my-16">
+  <div class="container flex flex-col items-center justify-between max-w-5xl gap-8 px-5 py-6 mx-auto text-center text-black
+      bg-primary rounded-xl lg:flex-row">
+    <h2 class="font-semibold">Book your free 1-hour AI consultation and discover what's possible for your business.</h2>
+    <button class="px-6 py-2 font-semibold uppercase transition-opacity bg-black rounded-full text-primary whitespace-nowrap open-contact
+        hover:opacity-80">
+      Get started</button>
+  </div>
+</section>
+
+{# ===== ABOUT SECTION ===== #}
+<section id="about">
+  <div class="container px-5 py-10 mx-auto lg:py-20">
+    <h2 class="text-3xl font-semibold text-center font-display text-primary md:text-4xl lg:text-5xl">About Us</h2>
+    <p class="max-w-5xl mx-auto mt-8 leading-relaxed text-muted-foreground">
+      Ascension Cloud Solutions is an AI-first technology consultancy based in Wollongong. We bring together experts in
+      machine learning, data engineering, and intelligent automation to help businesses harness the full potential of artificial
+      intelligence. From deploying predictive models for enterprise retail to building computer vision systems for mobile
+      inspection platforms, we deliver AI solutions that are practical, scalable, and built to drive real business outcomes.
+    </p>
+  </div>
+</section>
+
+{# ===== SERVICES CONTINUED ===== #}
+<section class="pt-10">
+  <div class="container px-5 py-10 mx-auto lg:py-16">
+    <h2 class="text-3xl font-semibold text-center font-display text-primary md:text-4xl lg:text-5xl">AI Engineering & Integration</h2>
+    <div class="grid justify-center gap-8 mt-16 lg:grid-cols-3">
+      {% for i in range(3, 6) %}
+        <div class="max-w-xl p-6 transition-colors duration-300 rounded-xl hover:bg-muted h-fit">
+          <i class="{{ services[i].icon }} text-primary/60"></i>
+          <h3 class="mt-4 text-xl font-semibold text-primary font-body">{{ services[i].title }}</h3>
+          <p class="mt-4 leading-relaxed text-muted-foreground">{{ services[i].description }}</p>
+        </div>
+      {% endfor %}
     </div>
-  </section>
+  </div>
+</section>
+
+{# ===== CTA SECTION 2 ===== #}
+<section class="px-5 my-16">
+  <div class="container flex flex-col items-center justify-between max-w-5xl gap-8 px-5 py-6 mx-auto text-center text-black
+      bg-primary rounded-xl lg:flex-row">
+    <h2 class="font-semibold">Ready to integrate AI into your operations? Let's build something intelligent together.</h2>
+    <button class="px-6 py-2 font-semibold uppercase transition-opacity bg-black rounded-full text-primary whitespace-nowrap open-contact
+        hover:opacity-80">
+      Get started</button>
+  </div>
+</section>
+
+{# ===== VISION SECTION ===== #}
+<section id="vision">
+  <div class="container px-5 py-10 mx-auto lg:py-20">
+    <h2 class="text-3xl font-semibold text-center font-display text-primary md:text-4xl lg:text-5xl">Our Vision</h2>
+    <p class="max-w-5xl mx-auto mt-8 leading-relaxed text-muted-foreground">
+      We believe AI should be accessible, practical, and transformative — not just a buzzword. Our vision is to empower
+      businesses of every size with intelligent systems that automate the mundane, surface hidden insights, and accelerate
+      growth. By combining deep technical expertise with a relentless focus on real-world outcomes, we help organisations
+      navigate the AI landscape with confidence and build technology that compounds value over time.
+    </p>
+    <div class="grid max-w-5xl grid-cols-2 gap-8 mx-auto mt-10 lg:grid-cols-4 lg:mt-20">
+      {% for v in vision %}
+        <div class="flex flex-col items-center p-8 overflow-hidden text-center transition-all duration-300 cursor-pointer rounded-xl
+            open-contact bg-muted text-foreground hover:bg-primary hover:text-black group hover:shadow-xl hover:shadow-primary/20">
+          <i class="{{ v.icon }}"></i>
+          <h3 class="mt-4 text-lg font-medium">{{ v.title }}</h3>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
