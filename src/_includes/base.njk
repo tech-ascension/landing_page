@@ -105,14 +105,12 @@
           });
         }
 
-        // === Hero video load → wipe loader to reveal video ===
+        // === Hero YouTube iframe load → wipe loader to reveal video ===
         console.time('hero-total');
         console.time('hero-video-ready');
-        var video = document.getElementById('hero-video');
+        var iframe = document.getElementById('hero-video');
         var loader = document.getElementById('hero-loader');
         var hero = document.getElementById('hero');
-
-        console.log('[hero] DOMContentLoaded, video.readyState:', video ? video.readyState : 'N/A');
 
         function startHeroTransition() {
           if (hero.classList.contains('hero-loaded') || loader.classList.contains('is-wiping')) return;
@@ -128,18 +126,25 @@
           }, { once: true });
         }
 
-        if (video) {
-          // Use 'playing' event — guarantees video has actually started rendering
-          if (video.readyState >= 4 && !video.paused) {
-            console.log('[hero] Video already playing at DOMContentLoaded');
-            startHeroTransition();
-          } else {
-            console.log('[hero] Waiting for video to start playing...');
-            video.addEventListener('playing', function () {
-              console.log('[hero] Video "playing" event fired');
-              startHeroTransition();
-            }, { once: true });
-          }
+        if (iframe) {
+          // YouTube iframe API — listen for player state changes
+          var tag = document.createElement('script');
+          tag.src = 'https://www.youtube.com/iframe_api';
+          document.head.appendChild(tag);
+
+          window.onYouTubeIframeAPIReady = function () {
+            var player = new YT.Player('hero-video', {
+              events: {
+                onStateChange: function (event) {
+                  if (event.data === YT.PlayerState.PLAYING) {
+                    console.log('[hero] YouTube player started playing');
+                    startHeroTransition();
+                  }
+                }
+              }
+            });
+          };
+
           // Safety fallback — don't leave loader forever
           setTimeout(function () {
             console.log('[hero] Safety fallback triggered');
