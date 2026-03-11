@@ -78,20 +78,31 @@ layout: 'base.njk'
     </p>
     <div class="grid gap-8 mt-16 md:grid-cols-2 lg:grid-cols-3">
       {% for project in projects %}
-        <a href="#" class="relative block overflow-hidden transition-all duration-300 group portfolio-card reveal aspect-[16/10] rounded-2xl" style="transition-delay: {{ loop.index0 % 3 * 120 }}ms;">
-          <img
-            src="{{ project.thumbnail }}"
-            alt="{{ project.title }}"
-            class="{% if project.contain %}object-contain pb-[30%]{% else %}object-cover{% endif %} w-full h-full transition-transform duration-500 group-hover:scale-105"
-            loading="lazy"/>
-          <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent">
-            <div class="absolute bottom-0 left-0 right-0 p-6">
-              <span class="text-sm text-white/60">{{ project.client }}</span>
-              <h3 class="mt-1 text-lg font-semibold text-white font-body">{{ project.title }}</h3>
-              <p class="mt-1 text-sm text-white/50 line-clamp-2">{{ project.description }}</p>
+        <div class="flip-card portfolio-card reveal" style="transition-delay: {{ loop.index0 % 3 * 120 }}ms;" onclick="this.classList.toggle('is-flipped')">
+          <div class="flip-card-inner aspect-[16/10] rounded-2xl">
+            <div class="flip-card-front group">
+              <img
+                src="{{ project.thumbnail }}"
+                alt="{{ project.title }}"
+                class="{% if project.contain %}object-contain pb-[30%]{% else %}object-cover{% endif %} w-full h-full transition-transform duration-500 group-hover:scale-105"
+                loading="lazy"/>
+              <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent">
+                <div class="absolute bottom-0 left-0 right-0 p-6">
+                  <span class="text-sm text-white/60">{{ project.client }}</span>
+                  <h3 class="mt-1 text-lg font-semibold text-white font-body">{{ project.title }}</h3>
+                  <p class="mt-1 text-sm text-white/50 line-clamp-2">{{ project.description }}</p>
+                </div>
+              </div>
+            </div>
+            <div class="flip-card-back">
+              <img
+                src="{{ project.review }}"
+                alt="{{ project.client }} review"
+                class="object-cover w-full h-full"
+                loading="lazy"/>
             </div>
           </div>
-        </a>
+        </div>
       {% endfor %}
     </div>
   </div>

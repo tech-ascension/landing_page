@@ -4,14 +4,16 @@
         "client": "Shopomation",
         "title": "AI-Powered E-Commerce Automation",
         "description": "Engineered an intelligent automation platform that streamlines product listing, inventory management, and order fulfilment using machine learning pipelines.",
-        "thumbnail": "/assets/images/reviewers/shopomation.png"
+        "thumbnail": "/assets/images/reviewers/shopomation.png",
+        "review": "/assets/images/reviewers/reviews/conner-shopomation.png"
     },
     {
         "slug": "new-world",
         "client": "New World",
         "title": "New Zealand's Premium Full-Service Grocery Store",
         "description": "Reworked the entire New World loyalty program to integrate with their latest offering called Club Plus",
-        "thumbnail": "/assets/images/reviewers/new-world.png"
+        "thumbnail": "/assets/images/reviewers/new-world.png",
+        "review": "/assets/images/reviewers/reviews/yin-nw-review.png"
     },
     {
         "slug": "pak-n-save",
@@ -19,14 +21,16 @@
         "title": "Cybersecurity & Rewards Programme",
         "description": "Reviewed and implemented a more robust user authentication method that focuses on the latest compliance standards",
         "thumbnail": "/assets/images/reviewers/Paknsave.svg",
-        "contain": true
+        "contain": true,
+        "review": "/assets/images/reviewers/reviews/pns-review.png"
     },
     {
         "slug": "four-square",
         "client": "Four Square",
         "title": "New Zealand's Convenience Around the Corner",
         "description": "Managed operations preventing regression issues into their rebranding pipeline for their latest offerings",
-        "thumbnail": "/assets/images/reviewers/4sq.png"
+        "thumbnail": "/assets/images/reviewers/4sq.png",
+        "review": "/assets/images/reviewers/reviews/4sq-review.png"
     },
     {
         "slug": "foodstuffs-nz",
@@ -34,7 +38,8 @@
         "title": "Enterprise AI Platform",
         "description": "Architected a unified data and AI platform serving multiple retail brands, enabling real-time decision-making across procurement, logistics, and merchandising.",
         "thumbnail": "/assets/images/reviewers/foodstuffsnz.svg",
-        "contain": true
+        "contain": true,
+        "review": "/assets/images/reviewers/reviews/foodies-nz-review.png"
     },
     {
         "slug": "equ",
@@ -42,48 +47,55 @@
         "title": "ML-Driven Nutrition Intelligence",
         "description": "Developed machine learning algorithms that personalise meal plans and nutritional guidance at scale, transforming how users approach health and fitness.",
         "thumbnail": "/assets/images/reviewers/amal-equ.png",
-        "containZoom": true
+        "containZoom": true,
+        "review": "/assets/images/reviewers/reviews/equ-amal.png"
     },
     {
         "slug": "les-howard-studios",
         "client": "Les Howard Studios",
         "title": "Creative Production Automation",
         "description": "Implemented AI-assisted workflows for content production, automating post-processing, asset management, and delivery pipelines for a leading creative studio.",
-        "thumbnail": "/assets/images/reviewers/leshowardstudios.jpg"
+        "thumbnail": "/assets/images/reviewers/leshowardstudios.jpg",
+        "review": "/assets/images/reviewers/reviews/les-review.png"
     },
     {
         "slug": "good-to-go",
         "client": "Good To Go Mobile Roadworthys",
         "title": "AI-Powered Landing Page Pipeline",
         "description": "Built a landing page that integrated with the latest in online machine learning analytics for lead generation and scheduling integrations with High Level to integrate with social media channels",
-        "thumbnail": "/assets/images/reviewers/gtgmr.png"
+        "thumbnail": "/assets/images/reviewers/gtgmr.png",
+        "review": "/assets/images/reviewers/reviews/gtgr-review.png"
     },
     {
         "slug": "bigboibets",
         "client": "BigBoiBets",
         "title": "Former Co-Founder",
         "description": "Technical Co-Founder behind Runescape's largest online poker platform for both cryptocurrency and currencies across other MMOs.",
-        "thumbnail": "/assets/images/reviewers/bbb.png"
+        "thumbnail": "/assets/images/reviewers/bbb.png",
+        "review": "/assets/images/reviewers/reviews/bbb-review.png"
     },
     {
         "slug": "whitehall-group-uk",
         "client": "Whitehall Group UK",
         "title": "Enterprise Digital Transformation",
         "description": "Technical consultant for backend integrations that were required across a variety of Whitehall's internal .NET infrastructure.",
-        "thumbnail": "/assets/images/reviewers/wh.png"
+        "thumbnail": "/assets/images/reviewers/wh.png",
+        "review": "/assets/images/reviewers/reviews/wh-review-richard.png"
     },
     {
         "slug": "propic",
         "client": "Propic",
         "title": "AI Insights for Real Estate",
         "description": "Developed machine learning models that deliver AI-driven insights for lead generation, empowering real estate agencies, prospects, and brokers with predictive intelligence.",
-        "thumbnail": "/assets/images/reviewers/propic.png"
+        "thumbnail": "/assets/images/reviewers/propic.png",
+        "review": "/assets/images/reviewers/reviews/propic-review.png"
     },
     {
         "slug": "azility",
         "client": "Azility",
         "title": "Business Intelligence & Energy Analytics",
         "description": "Built data warehousing and machine learning pipelines powering reporting dashboards for cost and consumption analytics of energy across council sites.",
-        "thumbnail": "/assets/images/reviewers/azility.png"
+        "thumbnail": "/assets/images/reviewers/azility.png",
+        "review": "/assets/images/reviewers/reviews/jon-azility-review.png"
     }
 ]
