@@ -60,11 +60,24 @@ layout: 'base.njk'
       Enquire Now
     </button>
   </div>
-  <button class="absolute scroll-indicator bottom-10 hero-text-reveal" style="z-index: 3; animation-delay: 0.3s;" id="scroll-down-btn" aria-label="Scroll to portfolio">
+  <button class="absolute scroll-indicator bottom-10 hero-text-reveal" style="z-index: 3; animation-delay: 0.3s;" id="scroll-down-btn" aria-label="Scroll to about">
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-10 h-10">
       <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3"/>
     </svg>
   </button>
+</section>
+
+{# ===== ABOUT SECTION ===== #}
+<section id="about">
+  <div class="container px-5 py-10 mx-auto lg:py-20">
+    <h2 class="text-3xl font-semibold text-center font-display text-foreground md:text-4xl lg:text-5xl">About Us</h2>
+    <p class="max-w-5xl mx-auto mt-8 leading-relaxed text-muted-foreground">
+      Ascension Cloud Solutions is an AI-first technology consultancy based in Wollongong. We bring together experts in
+      machine learning, data engineering, and intelligent automation to help businesses harness the full potential of artificial
+      intelligence. From deploying predictive models for enterprise retail to building computer vision systems for mobile
+      inspection platforms, we deliver AI solutions that are practical, scalable, and built to drive real business outcomes.
+    </p>
+  </div>
 </section>
 
 {# ===== PORTFOLIO SECTION ===== #}
@@ -78,20 +91,31 @@ layout: 'base.njk'
     </p>
     <div class="grid gap-8 mt-16 md:grid-cols-2 lg:grid-cols-3">
       {% for project in projects %}
-        <a href="#" class="relative block overflow-hidden transition-all duration-300 group portfolio-card reveal aspect-[16/10] rounded-2xl" style="transition-delay: {{ loop.index0 % 3 * 120 }}ms;">
-          <img
-            src="{{ project.thumbnail }}"
-            alt="{{ project.title }}"
-            class="{% if project.contain %}object-contain pb-[30%]{% else %}object-cover{% endif %} w-full h-full transition-transform duration-500 group-hover:scale-105"
-            loading="lazy"/>
-          <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent">
-            <div class="absolute bottom-0 left-0 right-0 p-6">
-              <span class="text-sm text-white/60">{{ project.client }}</span>
-              <h3 class="mt-1 text-lg font-semibold text-white font-body">{{ project.title }}</h3>
-              <p class="mt-1 text-sm text-white/50 line-clamp-2">{{ project.description }}</p>
+        <div class="flip-card portfolio-card reveal" style="transition-delay: {{ loop.index0 % 3 * 120 }}ms;" onclick="this.classList.toggle('is-flipped')">
+          <div class="flip-card-inner aspect-[16/10] rounded-2xl">
+            <div class="flip-card-front group">
+              <img
+                src="{{ project.thumbnail }}"
+                alt="{{ project.title }}"
+                class="{% if project.contain %}object-contain pb-[30%]{% else %}object-cover{% endif %} w-full h-full transition-transform duration-500 group-hover:scale-105"
+                loading="lazy"/>
+              <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent">
+                <div class="absolute bottom-0 left-0 right-0 p-6">
+                  <span class="text-sm text-white/60">{{ project.client }}</span>
+                  <h3 class="mt-1 text-lg font-semibold text-white font-body">{{ project.title }}</h3>
+                  <p class="mt-1 text-sm text-white/50 line-clamp-2">{{ project.description }}</p>
+                </div>
+              </div>
+            </div>
+            <div class="flip-card-back bg-black">
+              <img
+                src="{{ project.review }}"
+                alt="{{ project.client }} review"
+                class="object-contain w-full h-full"
+                loading="lazy"/>
             </div>
           </div>
-        </a>
+        </div>
       {% endfor %}
     </div>
   </div>
@@ -153,19 +177,6 @@ layout: 'base.njk'
     <button class="px-6 py-2 font-semibold uppercase transition-opacity bg-black rounded-full text-primary whitespace-nowrap open-contact
         hover:opacity-80">
       Get started</button>
-  </div>
-</section>
-
-{# ===== ABOUT SECTION ===== #}
-<section id="about">
-  <div class="container px-5 py-10 mx-auto lg:py-20">
-    <h2 class="text-3xl font-semibold text-center font-display text-foreground md:text-4xl lg:text-5xl">About Us</h2>
-    <p class="max-w-5xl mx-auto mt-8 leading-relaxed text-muted-foreground">
-      Ascension Cloud Solutions is an AI-first technology consultancy based in Wollongong. We bring together experts in
-      machine learning, data engineering, and intelligent automation to help businesses harness the full potential of artificial
-      intelligence. From deploying predictive models for enterprise retail to building computer vision systems for mobile
-      inspection platforms, we deliver AI solutions that are practical, scalable, and built to drive real business outcomes.
-    </p>
   </div>
 </section>
 
