@@ -91,9 +91,9 @@ layout: 'base.njk'
     </p>
     <div class="grid gap-8 mt-16 md:grid-cols-2 lg:grid-cols-3">
       {% for project in projects %}
-        <div class="flip-card portfolio-card reveal" style="transition-delay: {{ loop.index0 % 3 * 120 }}ms;" onclick="this.classList.toggle('is-flipped')">
-          <div class="flip-card-inner aspect-[16/10] rounded-2xl">
-            <div class="flip-card-front group">
+        <div class="{% if project.review %}flip-card{% endif %} portfolio-card reveal" style="transition-delay: {{ loop.index0 % 3 * 120 }}ms;" {% if project.review %}onclick="this.classList.toggle('is-flipped')"{% endif %}>
+          <div class="{% if project.review %}flip-card-inner{% endif %} aspect-[16/10] rounded-2xl">
+            <div class="{% if project.review %}flip-card-front{% endif %} group">
               <img
                 src="{{ project.thumbnail }}"
                 alt="{{ project.title }}"
@@ -107,6 +107,7 @@ layout: 'base.njk'
                 </div>
               </div>
             </div>
+            {% if project.review %}
             <div class="flip-card-back bg-black">
               <img
                 src="{{ project.review }}"
@@ -114,6 +115,7 @@ layout: 'base.njk'
                 class="object-contain w-full h-full"
                 loading="lazy"/>
             </div>
+            {% endif %}
           </div>
         </div>
       {% endfor %}
