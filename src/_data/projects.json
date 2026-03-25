@@ -8,36 +8,6 @@
         "review": "/assets/images/reviewers/reviews/conner-shopomation.png"
     },
     {
-        "slug": "new-world",
-        "client": "New World",
-        "title": "New Zealand's Premium Full-Service Grocery Store",
-        "description": "Reworked the entire New World loyalty program to integrate with their latest offering called Club Plus",
-        "thumbnail": "/assets/images/reviewers/new-world.png"
-    },
-    {
-        "slug": "pak-n-save",
-        "client": "PAK'nSAVE",
-        "title": "Cybersecurity & Rewards Programme",
-        "description": "Reviewed and implemented a more robust user authentication method that focuses on the latest compliance standards",
-        "thumbnail": "/assets/images/reviewers/Paknsave.svg",
-        "contain": true
-    },
-    {
-        "slug": "four-square",
-        "client": "Four Square",
-        "title": "New Zealand's Convenience Around the Corner",
-        "description": "Managed operations preventing regression issues into their rebranding pipeline for their latest offerings",
-        "thumbnail": "/assets/images/reviewers/4sq.png"
-    },
-    {
-        "slug": "foodstuffs-nz",
-        "client": "Foodstuffs NZ",
-        "title": "Enterprise AI Platform",
-        "description": "Architected a unified data and AI platform serving multiple retail brands, enabling real-time decision-making across procurement, logistics, and merchandising.",
-        "thumbnail": "/assets/images/reviewers/foodstuffsnz.svg",
-        "contain": true
-    },
-    {
         "slug": "equ",
         "client": "equ (formerly Equalution)",
         "title": "ML-Driven Nutrition Intelligence",
