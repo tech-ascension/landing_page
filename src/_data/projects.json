@@ -8,15 +8,6 @@
         "review": "/assets/images/reviewers/reviews/conner-shopomation.png"
     },
     {
-        "slug": "equ",
-        "client": "equ (formerly Equalution)",
-        "title": "ML-Driven Nutrition Intelligence",
-        "description": "Developed machine learning algorithms that personalise meal plans and nutritional guidance at scale, transforming how users approach health and fitness.",
-        "thumbnail": "/assets/images/reviewers/amal-equ.png",
-        "containZoom": true,
-        "review": "/assets/images/reviewers/reviews/equ-amal.png"
-    },
-    {
         "slug": "les-howard-studios",
         "client": "Les Howard Studios",
         "title": "Creative Production Automation",
@@ -39,29 +30,5 @@
         "description": "Technical Co-Founder behind Runescape's largest online poker platform for both cryptocurrency and currencies across other MMOs.",
         "thumbnail": "/assets/images/reviewers/bbb.png",
         "review": "/assets/images/reviewers/reviews/bbb-review.png"
-    },
-    {
-        "slug": "whitehall-group-uk",
-        "client": "Whitehall Group UK",
-        "title": "Enterprise Digital Transformation",
-        "description": "Technical consultant for backend integrations that were required across a variety of Whitehall's internal .NET infrastructure.",
-        "thumbnail": "/assets/images/reviewers/wh.png",
-        "review": "/assets/images/reviewers/reviews/wh-review-richard.png"
-    },
-    {
-        "slug": "propic",
-        "client": "Propic",
-        "title": "AI Insights for Real Estate",
-        "description": "Developed machine learning models that deliver AI-driven insights for lead generation, empowering real estate agencies, prospects, and brokers with predictive intelligence.",
-        "thumbnail": "/assets/images/reviewers/propic.png",
-        "review": "/assets/images/reviewers/reviews/propic-review.png"
-    },
-    {
-        "slug": "azility",
-        "client": "Azility",
-        "title": "Business Intelligence & Energy Analytics",
-        "description": "Built data warehousing and machine learning pipelines powering reporting dashboards for cost and consumption analytics of energy across council sites.",
-        "thumbnail": "/assets/images/reviewers/azility.png",
-        "review": "/assets/images/reviewers/reviews/jon-azility-review.png"
     }
 ]
